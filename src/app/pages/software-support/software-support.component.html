@@ -1,0 +1,134 @@
+<app-header [backgroundImage]="backgroundSoftwareSupportImage" [headerTitle]="headerSoftwareSupportTitle" [headerSpan]="headerSoftwareSupportSpan"
+  [headerParaOne]="headerSoftwareSupportParaOne" [headerLanguageArray]="headerSoftwareSupportLanguageArray">
+</app-header>
+<!-- At cbnits section starts -->
+<div class="sub-header">
+  <div class="devCbnits py-5">
+    <div class="themed-container container">
+      <div class="d-flex align-items-center row">
+        <div class="col-lg-5 col-xl-5">
+          <div class="imgSec">
+            <img src="https://cbnits.s3.us-east-1.amazonaws.com/agile.jpg" alt="agile" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-xl-7">
+          <div class="software-devCbnits-Text">
+            <p>
+              <span class="blackcolor">At <span class="skycolor">cbnits</span></span>, we channelize our resources to
+              provide fool-proof, real-time
+              and long-term software maintenance and support services to large
+              global conglomerates as well as local software vendors. With
+              disciplined approach and years of experience, we assure top-notch
+              software application maintenance resulting in tangible savings at
+              high service levels without compromising on software quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--At cbnits section End-->
+  <!-- software maintenance section starts -->
+  <div class="themed-container">
+    <div class="mainContainer py-5">
+      <div class="themed-container container">
+        <div class="text-center soft-heads">
+          <h2>SOFTWARE MAINTENANCE &amp;</h2>
+          <h2 class="skycolor">SUPPORT SERVICES OF CBNITS</h2>
+        </div>
+        <div *ngFor="let main of maintenanceArray; index as i"
+          class="d-flex align-items-center justify-content-center serviceDiv row">
+          <div class="col-lg-4 col-xl-4" *ngFor="let data of main.description; index as i">
+            <div class="services">
+              <div class="d-flex align-items-center row">
+                <div class="col-lg-2">
+                  <h4>{{ i + 1 }}</h4>
+                </div>
+                <div class="col-lg-10">
+                  <h5>{{ data }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--software maintenance section End-->
+  <!-- Specializes service section starts -->
+  <div class="themed-container">
+    <div class="special py-5">
+      <div class="themed-container container">
+        <div class="text-center special-heads">
+          <h2>Specialized <span> Services</span></h2>
+        </div>
+        <div class="d-flex align-items-center justify-content-center row">
+          <div class="d-flex align-items-center col-lg-2 col-xl-2" *ngFor="let ser of serviceArray">
+            <div class="special-wrap">
+              <div class="text-center">
+                <img src="{{ ser.image }}" />
+                <h6>{{ ser.name }}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Specializes service section End-->
+
+  <!-- why choose us section starts -->
+  <div class="themed-container">
+    <div class="whychoose-cbnits py-5">
+      <div class="themed-container container">
+        <div class="text-center whychoose-cbnits-head">
+          <h2>Why <span class="skycolor">Choose us</span></h2>
+          <p>A choice that makes different</p>
+        </div>
+        <div class="d-flex align-items-center row">
+          <div class="col-lg-3 col-xl-3" *ngFor="let cap of chooseArray; let i = index">
+            <div class="whychoose">
+              <div class="whychoose-header text-center">
+                <span>{{ i + 1 }}</span>
+              </div>
+              <div class="d-flex align-items-center row">
+                <div class="col-lg-12 col-xl-12">
+                  <h5>{{ cap.title }}</h5>
+                  <p>
+                    {{ cap.desc }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--why choose us section End-->
+    <!--hire us button section starts -->
+    <div class="themed-container">
+      <div class="container">
+        <div class="specialBanner">
+          <div class="row">
+            <div class="col-lg-10 col-xl-10">
+              <p>
+                We pledge to provide the best technical talent to manage your
+                software maintenance&nbsp;&amp;&nbsp;support needs.
+              </p>
+            </div>
+            <div class="col-lg-2 col-xl-2">
+              <button type="button" class="btn btn-primary" (click)="hireUs()">
+                HIRE US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hire us button section End-->
+  </div>
+</div>
+
+<!-- Footer section start-->
+<app-footer></app-footer>
+<!-- Footer section end-->

@@ -1,0 +1,184 @@
+<app-header
+  [backgroundImage]="backgroundHrTechImage"
+  [headerTitle]="headerHrTechTitle"
+  [headerSpan]="headerHrTechSpan"
+  [headerLanguageArray]="headerHrTechLanguageArray"
+>
+</app-header>
+
+<div class="hrTech py-5">
+  <div class="themed-container mb-5 container">
+    <div class="d-flex align-items-center row">
+      <div class="col-lg-6 col-xl-6">
+        <div class="imgSec">
+          <img
+            src="https://cbnits.s3.us-east-1.amazonaws.com/cdHRTechMain.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-6">
+        <div class="hrTech-Text">
+          <p>
+            <span>Overview </span>The world's first high potential leadership
+            development platform , built on patent pending machine intelligence
+            technology . The enterprise leverages the power of Artificial
+            Intelligence (AI) and Machine Learning to help nurture and develop
+            the next generation of leaders. The solution helps professionals
+            define their mentoring journey maps by finding their algorithm for
+            career growth and success. The aims to redefine the future of work
+            by creating a culture of inclusion and care.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--********-->
+  <div class="hrTechCbnits py-5">
+    <div class="themed-container container">
+      <div class="text-center"><h2>Functionality</h2></div>
+      <div class="d-flex align-items-center row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="hrTechCbnits-advantages">
+            <div>
+              <p>
+                Global Talent dashboards offering an overview of platforms usage
+                to HR leaders.
+              </p>
+              <p>
+                Rich ML/AI Analytics offering behavioral skill level, in depth
+                analytical report of all users within the company
+              </p>
+              <p>
+                Free 16 personality factor(16PF) Assessments to help users
+                identify their potential, suitability and areas that need
+                development.
+              </p>
+              <p>
+                A ready list of very specific attributes, behaviors and
+                functional expertise areas to seek feedback on - including
+                Leadership, Communication, Collaboration and Influencing
+              </p>
+            </div>
+            <div class="row" *ngFor="let fun of functionality">
+              <div class="col-lg-1 col-xl-1" >
+                <img
+                  src="{{ fun.img }}"
+                  alt="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png"
+                  style="
+                    margin-right: 2px;
+                    font-size: 18px;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                  "
+                />
+              </div>
+              <div class="col-lg-11 col-xl-11"><p>{{ fun.text }}</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="imgSec">
+            <img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/cdHRTechMain2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!--**********-->
+    <div class="v2-tree py-5">
+      <div class="themed-container container">
+        <h2>What <span class="skycolor">We Did</span></h2>
+        <div class="hrdid-cusrow mt-5 row">
+          <div class="mb-5 text-center col-lg-5 col-xl-5">
+            <img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/hrTechTree1.png"
+              alt=""
+            />
+          </div>
+          <div class="d-flex justify-content-center rignt col-lg-2 col-xl-2">
+            <span class="hrdid-reason-pick">01</span>
+          </div>
+          <div class="mb-5 hrdid-your-it-partner col-lg-5 col-xl-5">
+            <h6>HTML and CSS</h6>
+            <p>
+              Our Expertise designing team has built the enitire HTML and CSS
+            </p>
+          </div>
+          <div class="mb-5 hrdid-your-it-partner text-right col-lg-5 col-xl-5">
+            <h6>Responsive on all platforms</h6>
+            <p>
+              We have made website and application responsive on all platforms
+            </p>
+          </div>
+          <div class="d-flex justify-content-center left col-lg-2 col-xl-2">
+            <span class="hrdid-reason-pick">02</span>
+          </div>
+          <div class="mb-5 text-center col-lg-5 col-xl-5">
+            <img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/hrTechTree2.png"
+              alt=""
+            />
+          </div>
+          <div class="mb-5 text-center col-lg-5 col-xl-5">
+            <img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/hrTechTree3.png"
+              alt=""
+            />
+          </div>
+          <div class="d-flex justify-content-center rignt col-lg-2 col-xl-2">
+            <span class="hrdid-reason-pick">03</span>
+          </div>
+          <div class="mb-5 hrdid-your-it-partner col-lg-5 col-xl-5">
+            <h6>Develop the entire design and concept</h6>
+            <p>
+              Our web and app development team comprehensively implemented and
+              developed entire design concept
+            </p>
+          </div>
+          <div class="mb-5 hrdid-your-it-partner text-right col-lg-5 col-xl-5">
+            <h6>AI and Machine learning</h6>
+            <p>
+              We implement AI and Machine learning based mentoring platforms
+            </p>
+          </div>
+          <div class="d-flex justify-content-center left col-lg-2 col-xl-2">
+            <span class="hrdid-cusrow reason-pick">04</span>
+          </div>
+          <div class="mb-5 text-center col-lg-5 col-xl-5">
+            <img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/hrTechTree4.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!---->
+ 
+  </div>
+</div>
+
+
+<!-- technology section starts here -->
+
+<app-technology
+    [techHeading]="techHeading"
+    [techSpan]="techSpan"
+    [techStackArray]="techStackArray">
+</app-technology>
+
+<!-- technology section ends here -->
+
+
+<!-- Footer section starts here -->
+
+<app-footer></app-footer>
+
+<!-- Footer section ends here -->

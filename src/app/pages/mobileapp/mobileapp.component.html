@@ -1,0 +1,110 @@
+<!-- Header section starts here -->
+
+<app-header
+  [backgroundImage]="backgroundMobileAppImage"
+  [headerTitle]="headerMobileAppTitle"
+  [headerSpan]="headerMobileAppSpan"
+  [headerParaOne]="headerMobileAppParaOne"
+  [headerParaTwo]="headerMobileAppParaTwo"
+  [headerLanguageArray]="headerMobileAppLanguageArray"
+>
+</app-header>
+
+<!-- Header section ends here -->
+
+<!-- mobile application section starts here -->
+<div class="themed-container container">
+  <div class="d-flex justify-content-center row" style="margin: 50px 0px">
+    <div class="col-lg-5 col-xl-5">
+      <br /><br /><br /><br />
+      <div class="imgSec">
+        <img
+          src="https://cbnits-web-live.s3.amazonaws.com/app-1606903341474.png"
+        />
+      </div>
+    </div>
+    <div class="col-lg-7 col-xl-7">
+      <div class="centerDiv">
+        <h2>MOBILE <span class="skycolor">APPLICATIONS </span></h2>
+        <p>
+          {{ webPagePara[0] }}
+        </p>
+        <div style="height: 20px"></div>
+        <p>
+          {{ webPagePara1[1] }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mobile application section ends here -->
+
+<!-- our mobile app section starts here -->
+
+<app-microsoft
+  [microsoftHeading]="microsoftHeading"
+  [microsoftSpan]="microsoftSpan"
+  [microsoftArray]="microSoftArray"
+>
+</app-microsoft>
+
+<!-- our mobile app section ends here -->
+
+<!-- tool & technology section starts here -->
+
+<div class="tool-bnits py-5">
+  <div class="themed-container container">
+    <div class="text-center tool-head">
+      <h2>Tool &amp; <span class="skycolor">Technology</span></h2>
+      <h4>We use to make your mobile app come to life</h4>
+      <p>
+        A Developer of CBNITS will pick the perfect Technology stack suited for
+        your mobile app to <br />
+        be robust and scalable
+      </p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center row">
+      <div
+        class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3"
+        *ngFor="let tech of techArray"
+      >
+        <div class="techstack mb-4">
+          <div class="teckStackImg">
+            <img src="{{ tech.image }}" alt="image" />
+          </div>
+          <div class="teckStackName pl-4">
+            <span>{{ tech.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- tool & technology section ends here -->
+<div class="themed-container">
+  <div class="container">
+    <div class="text-center tool-bottamBanner">
+      <p>
+        Mobile apps have turned out to be the go-to solutions for businesses
+        cutting across multiple domains. From design to strategy to development
+        to maintenance, CBNITS provides you the finest app development budget.
+      </p>
+    </div>
+    <div class="text-center">
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="hireUs()"
+      >
+        Hire Us
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer section starts here -->
+
+<app-footer></app-footer>
+
+<!-- Footer section ends here -->

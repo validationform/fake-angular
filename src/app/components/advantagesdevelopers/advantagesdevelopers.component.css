@@ -1,0 +1,97 @@
+.Adarkbg {
+    background-color: #f8f9fd;
+     padding: 50px 0; 
+}
+
+.imgSec {
+    width: 100%;
+    height: auto;
+}
+
+.imgSec img {
+    width: 100%;
+}
+
+.Aadvantages {
+    background-color: #f8f9fd;
+}
+.Aadvantages h6 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    cursor: default;
+    width: 100%;
+    line-height: 46px;
+    font-family: 'Lato', sans-serif;
+}
+
+.Aadvantages p {
+    font-size: 18px;
+    font-weight: 600;
+    display:flex;
+    cursor: default;
+    width: 105%;
+    font-family: 'Lato', sans-serif;
+
+}
+.row {
+  margin-right: -15px;
+}
+
+.Adarkbg .btn-primary {
+    margin-top: 80px;
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    padding: 10px 36px;
+    font-size: 18px;
+}
+.Adarkbg .btn-primary:focus{
+  background-color: #007bff;
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+  box-shadow:0 0 0 3px #1dbdfc ;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+
+.Aadvantages p span {
+    margin-right: 12px;
+    cursor: default;
+    font-family: 'Lato', sans-serif;
+
+}
+@media (max-width: 767px) {
+    .tab-content {
+      width: 88%;
+      margin: auto;
+    }
+   
+  .Ahire-req p {
+    font-size: 20px;
+  }
+  .Aadvantages h6 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px 0;
+  }
+  .Aadvantages p{
+    font-size:15px !important;
+  }
+  .row {
+    margin-right: 0px;
+  }
+}
+  @media (max-width: 768px) and (max-width: 1023) {
+    .Adevelpment h2 {
+      font-size: 38px;
+  }
+   
+  .col-sm-12 {
+    width: 50% !important;
+ }
+}
+  

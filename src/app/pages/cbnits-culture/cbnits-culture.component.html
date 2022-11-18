@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundCbnitsCultureImage" [headerTitle]="headerCbnitsCultureTitle" [headerParaOne]="headerCbnitsCultureParaOne"
+    [headerLanguageArray]="headerCbnitsCultureLanguageArray">
+</app-header>
+
+<!-- cbnits-culture pagfe data start -->
+<div class="cbnits-culture">
+    <div class="cbnits-culture-content">
+        <div class="details">
+            <h2>{{cbnitsCultureById.metaTitle}}</h2>
+            <p [innerHTML]="cbnitsCultureById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- cbnits-culture page data end -->
+
+<app-footer></app-footer>

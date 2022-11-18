@@ -1,0 +1,69 @@
+.why-hire-fullstack {
+    background-color: #22bbf7;
+    padding:48px 0px;
+}
+.py-5 {
+    padding-bottom: 3rem!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.full-stack {
+    font-family: "Lato", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.full-stack-img img {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.organgecolor {
+    color: #f15928;
+    cursor: default;
+}
+span .organgecolor{
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    font-weight: 600;
+    cursor: default;
+    font-style: normal;
+    line-height: 24px;
+}
+h6{
+    margin:0 0 8px;
+    color:#ffff;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 46px;
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    cursor: default;
+}
+p{
+    font-family: "Lato",sans-serif;
+    color:#fff;
+    line-height: 30px;
+    font-size:20px;
+    display:flex;
+    cursor: default;
+    margin: 0 0 16px;
+    font-weight: 400;
+
+}
+@media (max-width: 767px){
+  h6{
+    font-size:24px;
+    line-height: 35px;
+  }
+  p{
+    font-size:14px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,323 @@
+.pb-5, .py-5 {
+    padding-bottom: 48px !important;
+}
+.pt-5, .py-5 {
+    padding-top: 48px !important;
+}
+.v2-discovery {
+    background-color: #eff0f3;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.imageSize {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.imgSec img {
+    width: 100%;   
+}
+
+.about-v2 {
+    font-family: 'Lato', sans-serif;
+}
+.v2-discovery {
+    background-color: #eff0f3;
+}
+.v2-discovery p {
+    font-size: 16px;
+    cursor:default;
+    font-family: 'Lato' sans-serif;
+}
+.v2-discovery h2 {
+    font-size: 42px;
+    cursor:default;
+    font-family: 'Lato' sans-serif;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+h4 {
+    font-family: 'Lato' sans-serif;
+    font-size: 24px;
+    cursor:default;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.imgSec2 {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.imageSize img {
+    width: 100%;
+}
+.imageSize {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+/*********************************************treee design********************/
+.reason-pick {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 20px;
+    cursor:default;
+    font-family: 'Lato' sans-serif;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eff0f3;
+    z-index: 9;
+}
+.reason-pick::after {
+    content: "";
+    top: 0px;
+    left: 97px;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #eff0f3;
+    z-index: 1;
+}
+
+.rignt::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 58px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 13px solid #eff0f3;
+}
+.left::before {
+    content: "";
+    position: absolute;
+    transform: rotate(178deg);
+    top: 27px;
+    left: 60px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 13px solid #eff0f3;
+}
+.cusrow.reason-pick::after {
+    display: none;
+}
+/**********************************************end***********************************/
+.your-it-partner h6{
+    font-size: 18px;
+    font-weight: 600;
+    cursor:default;
+}
+
+.v2-tree {
+    background-color: #f8f9fc;
+
+}
+.your-it-partner p {
+    font-size: 14px;
+    font-family: 'Lato' sans-serif;
+    cursor:default;
+}
+
+.v2-xfactor h2 {
+    font-size: 42px;
+    font-family: 'Lato' sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    cursor:default;
+    text-transform: uppercase;
+}
+.v2-xfactor p{
+    font-size: 16px;
+    font-family: 'Lato' sans-serif;
+    cursor:default;
+}
+
+.v2-discovery h2 {
+    font-size: 42px;
+    font-family: 'Lato' sans-serif;
+    cursor:default;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.v2-discovery p{
+    font-size: 18px;
+    cursor:default;
+}
+.v2-tree h2 {
+    font-size: 48px;
+    font-weight: 700;
+    cursor:default;
+    text-transform: uppercase;
+    text-align: center;
+}
+.v2-discovery p{
+    font-size: 16px;
+    cursor:default;
+}
+
+.v2-cbnits-left h2 {
+    font-size: 36px;
+    cursor:default;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.v2-cbnits-left p {
+    font-size: 16px;
+    cursor:default;
+    margin-right: 10px;
+}
+.v2-cbnits-right p {
+    font-size: 16px;
+    cursor:default;
+    padding-bottom: 5px;
+}
+.v2-cbnits-right p span {
+    margin-right: 15px;
+    cursor:default;
+}
+.mission{
+    margin: 30px 0;
+}
+.our-vision{
+    background-color: #7f3f98;
+    height: 220px;
+    padding: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.vision-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.our-vision h5{
+    text-transform: capitalize;
+    margin-left:20px ;
+    cursor:default;
+    font-family: 'Lato' sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.our-vision p{
+    /* margin-left:20px ; */
+    font-family: 'Lato' sans-serif;
+    cursor:default;
+    font-size: 15px;
+}
+.our-mission{
+    background-color: #f15a29;
+    height: 220px;
+    font-family: 'Lato' sans-serif;
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.our-mission h5{
+    text-transform: capitalize;
+    margin-left:20px ;
+    cursor:default;
+    font-family: 'Lato' sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.our-mission p{
+    font-size: 15px;
+    cursor:default;
+    font-family: 'Lato' sans-serif;
+}
+.company-img{
+    width: 70%;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
+  
+@media only screen and (max-width : 767px) {
+    .v2-cbnits-left h2 {
+        font-size: 32px !important;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .v2-cbnits-left p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .v2-cbnits-right p{
+        margin-left: 50px;
+    }
+
+    .v2-discovery h2{
+        margin-top: 20px;
+        font-size: 32px !important;
+    } 
+    .v2-xfactor h2 { font-size: 32px !important;} 
+    .v2-tree h2 {font-size: 32px !important;}
+    .your-it-partner h6 {
+
+        text-align: center;
+    }
+
+    .your-it-partner p {
+        text-align: center;
+    }
+    .reason-pick::after {background: none;}
+    .reason-pick { margin-bottom: 20px;}
+
+    .our-vision{
+        height: 325px;
+    }
+    .our-mission{
+        height: 275px;
+    }
+    .company-img{
+        width: 40%;
+    }
+}
+@media (min-width: 768px) and (max-width : 1024px) {
+    .our-vision{
+        height: 300px;
+    }
+    .our-mission{
+        height: 300px;
+    }
+}
+@media (min-width: 1025px) and (max-width : 1199px) {
+    .our-vision{
+        height: 270px;
+    }
+    .our-mission{
+        height: 270px;
+    }
+}

@@ -1,0 +1,137 @@
+<!-- Header section starts here -->
+<app-header
+  [backgroundImage]="backgroundImage"
+  [headerTitle]="headerTitle"
+  [headerSpan]="headerSpan"
+  [headerLanguageArray]="headerLanguageArray"
+>
+</app-header>
+<!-- Header section ends here -->
+
+<!-- Section One Start -->
+<div class="sapCbnits py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="sapCbnits-Text">
+          <p>
+            CBNITS makes use of SAP's intelligent Technology  Packages(IT's)
+            which is a buldle of intelligent Robotics Process Automation (RPA)
+            SAP Conversation AI and Machine Learning foundation services
+          </p>
+          <p class="skycolor">
+            We have proven skills in designing and building bots across various
+            platforms
+          </p>
+        </div>
+        <div class="d-flex align-items-center row">
+          <div
+            class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+            *ngFor="let sap of SapArray"
+          >
+            <div class="sap-deliverOptn mt-3">
+              <div class="sap-deliverOptnNo">
+                <div class="sap-dashBorder">
+                  <span><img src="{{ sap.img }} " alt="aa" /></span>
+                </div>
+              </div>
+              <div class="sap-deliverDetails">
+                <span>{{ sap.name }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="sapCbnits-img">
+          <img
+            src="https://cbnits.s3.us-east-1.amazonaws.com/sapMain.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section One Ends-->
+<!-- SAP RPA Section Starts-->
+<div class="botSap-bnits py-5">
+  <div class="themed-container container">
+    <div class="text-center botSap-head">
+      <h4>at CBNITS we have expertise in the following</h4>
+      <h6>technologies in respect to BOTs:</h6>
+    </div>
+    <div class="d-flex align-items-center row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="d-flex text-center">
+          <div class="stDiv">
+            <h6>SAP RPA</h6>
+            <p>
+              SAP has taken a deeper dive into RPA with its ‘Intelligent RPA’
+              offering. SAP Robotics Process Automation (RPA) is at the
+              forefront of human-computer technology. With minimal human
+              intervention, it enables and drives dynamic processes and
+              addresses key functional requirements. In order to automate
+              repetitive manual processes, SAP Intelligent Robotic Process
+              Automation uses intelligent bots.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="d-flex text-center">
+          <div class="stDiv">
+            <h6>SAP CAI</h6>
+            <p>
+              SAP uses CAI (Conversational AI) for the development of chatbots.
+              It enables people to train, build, connect, and monitor
+              intelligent chatbots fully integrated with SAP products. SAP CAI
+              uses Artificial Intelligence and Natural Language Processing
+              technology. SAP CAI can be integrated with web chatbots in Desktop
+              and mobiles with enriched and customized UI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SAP RPA Section Ends -->
+<!-- our expertise Section Starts-->
+<div>
+  <div class="sapTechnoly-bnits py-5">
+    <div class="themed-container container">
+      <div class="text-center sapTechnoly-head">
+        <h2>Our Expertise in other</h2>
+        <h2 class="skycolor">Sap technology includes:</h2>
+      </div>
+      <div class="d-flex align-items-center row">
+        <div
+          class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3"
+          *ngFor="let our of ourExpertiseArray"
+        >
+          <div class="sapTechnoly-deliverOptn mt-4">
+            <div class="sapTechnoly-dashBorder">
+              <span><img src="{{ our.expertiseImage }}" alt="" /></span>
+            </div>
+            <div class="sapTechnoly-deliverDetails">
+              <span>{{ our.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our expertise Section Ends-->
+
+<!-- Hire Us button -->
+<div class="text-center" style="height: 57px">
+  <button type="button" class="btn btn-primary" (click)="hireus()">
+    Hire Us
+  </button>
+</div>
+
+<!-- Footer section start-->
+<app-footer></app-footer>

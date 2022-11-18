@@ -1,0 +1,196 @@
+.sapCbnits {
+    font-family: 'poppins', sans-serif;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.py-5 {
+    padding-bottom: 3rem!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.sapCbnits-Text {
+    max-width: 510px;
+    margin-left: 30px;
+    cursor: default;
+}
+
+.sapCbnits-Text p {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: default;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    cursor: default;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.sap-deliverOptn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.my-3 {
+    margin-top: 1rem!important;
+}
+.sap-dashBorder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.sap-deliverDetails {
+    padding-left: 10px;
+}
+.sap-deliverDetails span {
+    font-size: 14px;
+    cursor: default;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.sapCbnits-img img {
+    width: 100%;
+    height: 350px;
+}
+.botSap-bnits {
+    background-color: #1dbdfc;
+    font-family: 'Poppins', sans-serif;
+}
+.text-center {
+    text-align: center!important;
+}
+.botSap-head h4 {
+    font-weight: 600;
+    cursor: default;
+}
+h4 {
+    font-size: 24px;
+    cursor: default;
+}
+h4 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    margin-inline-start: 0px;
+    cursor: default;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.botSap-head h6 {
+    font-weight: 500;
+    cursor: default;
+    font-size: 22px;
+    color: #fff;
+}
+.stDiv {
+    background-image: url('https://www.cbnits.com/44603b6507ad26e7061df42e69503bdd.png');
+    background-size: cover;
+    width: 100%;
+    border-radius: 6px;
+    padding: 22px 37px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.stDiv h6 {
+    color: #f15a29;
+    font-weight: 600;
+    cursor: default;
+}
+h6 {
+    font-size: 16px;
+    cursor: default;
+}
+.stDiv p {
+    margin-top: 15px;
+    cursor: default;
+    text-align: justify;
+    font-size: 16px;
+}
+.sapTechnoly-bnits {
+    background-color: #fff;
+}
+.py-5 {
+    padding-bottom: 3rem!important;
+}
+.sapTechnoly-head {
+    font-family: 'Poppins', sans-serif;
+}
+.sapTechnoly-head h2 {
+    font-size: 50px;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.sapTechnoly-deliverOptn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    margin:20px;
+}
+div {
+    display: block;
+}
+.sapTechnoly-deliverDetails {
+    padding-left: 10px;
+}
+.sapTechnoly-deliverDetails span {
+    font-size: 14px;
+    cursor: default;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+button{
+    background-color: rgb(0, 148, 68);
+    border-color: rgb(0, 148, 68);
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    background-color: #009444;
+    border-color:#009444
+}
+.btn-primary:focus{
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    background-color: #009444;
+    box-shadow:0 0 0 3px #1dbdfc ;
+}
+  @media only screen and (max-width : 767px) {
+  .sapTechnoly-deliverOptn{
+   margin:0; 
+  }
+}

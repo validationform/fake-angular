@@ -1,0 +1,114 @@
+/*mobile application css start*/
+.text-center{
+    margin-bottom: -1px;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+}
+.imgSec img {
+    width: 100%;
+}
+.centerDiv {
+    margin: 40px 0;
+    padding-left:10px;
+}
+.centerDiv h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+    margin-bottom: 30px;
+}
+.centerDiv p {
+    text-align: justify;
+    cursor: default;
+    font-family:'Poppins', sans-serif; ;
+    font-size:16px;
+}
+/* mobile application css end */
+.tool-head h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: default;
+    margin-bottom: 0;
+}
+
+.tool-head h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: default;
+}
+
+.tool-head p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px 0;
+    cursor: default;
+    color: #4d4d4d;
+}
+
+.techstack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.techstack .teckStackImg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.techstack .teckStackName span {
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: default;
+    font-weight: 700;
+}
+
+.skycolor {
+    color: #1dbdfc;
+}
+.tool-bottamBanner {
+    background: #ff5c33;
+    height: 180px;
+    padding: 30px;
+    margin: 50px 0;
+    font-family: "Poppins", sans-serif;
+    cursor: default;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 21px;
+}
+
+.btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #009444;
+    border-color:#009444;
+}
+.btn-primary:focus{
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+  box-shadow:0 0 0 3px #1dbdfc ;
+}
+@media (max-width: 767px){
+.tool-head h2 {
+    font-size: 35px !important;
+}
+}

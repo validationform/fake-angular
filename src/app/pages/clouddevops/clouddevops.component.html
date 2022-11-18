@@ -1,0 +1,102 @@
+<!-- Header section start-->
+<app-header
+  [backgroundImage]="cloudDevopsBackgroundImage"
+  [headerTitle]="cloudDevopsHeaderTitle"
+  [headerSpan]="cloudDevopsHeaderSpan"
+  [headerParaOne]="cloudDevopsHeaderParaOne"
+  [headerParaTwo]="cloudDevopsHeaderParaTwo"
+  [headerLanguageArray]="cloudDevopsHeaderLanguageArrayTwo"
+>
+</app-header>
+<!-- Header Section End-->
+
+<!--At cbnits section Start-->
+<app-webpage
+  [webPageImg]="atCbnitsImage"
+  [webFirstText]="atCbnitsFirstText"
+  [webSecondText]="atCbnitsSecondText"
+  [webPagePara]="atCbnitsPara"
+  [textp]="atCbnitsTextP"
+>
+</app-webpage>
+<!--At cbnits Section End-->
+
+<!--Devops offring section starts-->
+<div>
+  <div class="offering-bnits py-5">
+    <div class="themed-container container">
+      <div class="text-center offering-head">
+        <h2>Devops<span class="skycolor"> Offering</span></h2>
+      </div>
+      <div class="d-flex align-items-center justify-content-center row">
+        <div
+          class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3"
+          *ngFor="let cloud of devopsOffringArray; let i = index"
+        >
+          <div class="offering-deliverOptn mt-4">
+            <div class="offering-deliverOptnNo">
+              <div class="offering-dashBorder">
+                <span>{{ i + 1 }}</span>
+              </div>
+            </div>
+            <div class="offering-deliverDetails">
+              <span>{{ cloud }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Devops offring section end-->
+
+<!-- Why CBNITS as your Devops sevices provider section start-->
+<div class="devopsCbnits py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="imgSec">
+          <img
+            src="https://cbnits.s3.us-east-1.amazonaws.com/devopmain2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="devopsCbnits-advantages">
+          <h6>Why CBNITS as your Devops sevices provider?</h6>
+          <div class="row" *ngFor="let array of devopsServicesArray">
+            <div class="col-lg-1 col-xl-1">
+              <img
+                src="{{ array.devopsServicesImg }}"
+                alt="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png"
+                style="
+                  margin-right: 2px;
+                  font-size: 18px;
+                  margin-top: 5px;
+                  margin-left: 10px;
+                "
+              />
+            </div>
+            <div class="col-lg-11 col-xl-11">
+              <p>
+                {{ array.devopsServicesPara }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Why CBNITS as your Devops sevices provider section End -->
+
+<div class="text-center" style="height: 57px">
+  <button type="button" class="btn btn-primary" (click)="hireus()">
+    Hire Us
+  </button>
+</div>
+
+<!-- Footer section start-->
+<app-footer></app-footer>
+<!-- Footer section end-->

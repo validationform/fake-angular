@@ -1,0 +1,22 @@
+<app-header [backgroundImage]="backgroundStartupKolkataImage" [headerTitle]="headerStartupKolkataTitle"
+    [headerParaOne]="headerStartupKolkataParaOne" [headerLanguageArray]="headerStartupKolkataLanguageArray">
+</app-header>
+<div class="startup-content">
+    <div class="startup-kolkata">
+        <div class="artical">
+            <h2>{{NewsStartupKolkataById.metaTitle}}</h2>
+        </div>
+        <div class="author">
+            <h6>Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical Advisor, CBNITS
+            </h6>
+        </div>
+    </div><br>
+    <div class="details">
+        <div [innerHtml]="NewsStartupKolkataById.newsContent"></div>
+
+        <p>The original source of the article can be found <a href="https://startuptalky.com/kolkata-startups/">
+                HERE.</a></p>
+    </div>
+</div>
+
+<app-footer></app-footer>

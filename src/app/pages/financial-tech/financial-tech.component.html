@@ -1,0 +1,23 @@
+<app-header [backgroundImage]=" backgroundFinancialTechImage" [headerTitle]="headerFinancialTechTitle"
+    [headerParaOne]="headerFinancialTechParaOne" [headerLanguageArray]="headerFinancialTechLanguageArray">
+</app-header>
+
+<!-- financial-tech page data start -->
+<div class="financial-tech-content">
+    <div class="header">
+        <h2>{{financialTechById.metaTitle}}</h2>
+        <h6>Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical Advisor, CBNITS</h6>
+    </div>
+
+    <div class="header-details" [innerHTML]="financialTechById.newsContent">
+    </div>
+    <div class="header-details">
+        <p>The original source of the article can be found <a
+                href="https://www.siliconindia.com/news/business/how-ai--ml-technologies-are-reshaping-the-fintech-industry-nid-219257-cid-3.html">
+                HERE.</a></p>
+    </div>
+<!-- financial-tech page data end -->
+
+</div>
+
+<app-footer></app-footer>

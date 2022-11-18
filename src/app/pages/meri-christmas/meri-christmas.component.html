@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundMeriChristmasImage" [headerTitle]="headerMeriChristmasTitle" [headerParaOne]="headerMeriChristmasParaOne"
+    [headerLanguageArray]="headerMeriChristmasLanguageArray">
+</app-header>
+
+<!-- meri-christmas page data start -->
+<div class="meri-christmas">
+    <div class="meri-christmas-content">
+        <div class="details">
+            <h1>{{meriChristmasById.metaTitle}}</h1>
+            <p [innerHTML]="meriChristmasById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- meri-christmas page data end -->
+
+<app-footer></app-footer>

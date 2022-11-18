@@ -1,0 +1,30 @@
+<app-header [backgroundImage]="backgroundNewsImage" [headerTitle]="headerNewsTitle" [headerParaOne]="headerNewsParaOne"
+    [headerLanguageArray]="headerNewsLanguageArray">
+</app-header>
+
+<!-- News page blocks started here -->
+<div class="news">
+    <div class="width-center">
+        <div id="container">
+        <div class="content-width" *ngFor="let index of arrayNews">
+            <div class="images">
+                <div class="newsImgBg" [routerLink]="['/news/article/', index._id]"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{index.newsImageURL}});">
+                    <p class="tech">{{index.newCategory}}</p>
+                </div>
+                <div class="image-details">
+                    <p id="margin-bootom">{{index.metaDescription}} <br> <br>
+                        <span class="change-color">{{index.added_date |date:'mediumDate'}} &nbsp;{{index.added_date
+                            |date:'shortTime'}}</span>&nbsp;|&nbsp;<span class="span-color">{{index.newsCreatedBy}}<span
+                                id="spansmall"><sup>{{index.spanspl}}</sup></span></span>
+                    </p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- News page blocks started  -->
+
+<app-footer></app-footer>

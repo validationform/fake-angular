@@ -1,0 +1,69 @@
+<!-- Header section starts here -->
+<app-header
+  [backgroundImage]="edTechBackgroundImage"
+  [headerTitle]="edTechHeaderTitle"
+  [headerSpan]="edTechHeaderSpan"
+  [headerLanguageArray]="edTechHeaderLanguageArray"
+>
+</app-header>
+<!-- Header section ends here -->
+
+<!-- Overview section starts here -->
+<app-overview
+  [overviewHeading]="overviewHeading"
+  [overviewSpan]="overviewSpan"
+  [overviewImg]="overviewImg"
+>
+</app-overview>
+<!-- Overview section ends here -->
+
+<!-- Functionality section starts here -->
+<div class="darkbg">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="imgSec p-5">
+          <img
+            src="https://cbnits.s3.us-east-1.amazonaws.com/cseMain2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="functionality">
+          <h2>Functionality</h2>
+          <p *ngFor="let fun of functionalityArray">
+            <span class="mr-2">
+              <img
+                src="{{ fun.tick }}"
+                alt="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png" /></span
+            >{{ fun.text }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Functionality section ends here -->
+
+<!-- what we did section starts here -->
+<app-wedid
+  [wedidHeading]="weDidHeading"
+  [wedidSpan]="weDidSpan"
+  [wedidArray]="weDidArray"
+>
+</app-wedid>
+<!-- what we did section ends here -->
+
+<!-- technology section starts here -->
+<app-technology
+  [techHeading]="technologyHeading"
+  [techSpan]="technologySpan"
+  [techStackArray]="technologyStackArray"
+>
+</app-technology>
+<!-- technology section ends here -->
+
+<!-- Footer section starts here -->
+<app-footer></app-footer>
+<!-- Footer section ends here -->

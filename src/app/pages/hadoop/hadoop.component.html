@@ -1,0 +1,124 @@
+<!-- Header section starts here -->
+<app-header
+  [backgroundImage]="hadoopBackgroundImage"
+  [headerTitle]="hadoopHeaderTitle"
+  [headerSpan]="hadoopHeaderSpan"
+  [headerParaOne]="hadoopHeaderParaOne"
+  [headerLanguageArray]="hadoopHeaderLanguageArray"
+>
+</app-header>
+<!-- Header section ends here -->
+
+<!--Apache hadoop section start-->
+<div class="language py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center py-5 row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="develpment">
+          <h2>Apache Hadoop is at</h2>
+          <h2>the heart <span class="skycolor">of the big</span></h2>
+          <h2 class="skycolor">data revolution &amp;</h2>
+          <h2 class="skycolor mb-4">Cloudera</h2>
+          <p class="lightGreyText">
+            {{ apacheHadoopText }}
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="imgSec p-5">
+          <img
+            alt=""
+            src="https://cbnits-web-live.s3.amazonaws.com/habootMain-1606987390587.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Apache hadoop section end-->
+
+  <!-- Big data cbnits section start-->
+  <div class="skybg">
+    <div class="themed-container container">
+      <div class="d-flex align-items-center row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="imgSec p-5">
+            <img
+              alt=""
+              src="https://cbnits-web-live.s3.amazonaws.com/haboot-1606989483392.png"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="bigdata">
+            <h6 class="white mb-4">BIG DATA <span class="red">CBNITS</span></h6>
+            <p *ngFor="let big of bigDataDevelopmentArray">
+              <span
+                ><img
+                  src="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png"
+                  alt="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png" /></span
+              >{{ big }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Big data cbnits section end -->
+
+  <!--Cloudera service section start-->
+  <div class="themed-container container">
+    <div class="d-flex align-items-center py-5 row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="cloudera">
+          <h6 class="mb-4">Cloudera <span class="skycolor">Services</span></h6>
+          <p *ngFor="let cloud of clouderaServicesArray">
+            <span
+              ><img
+                src="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png"
+                alt="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png" /></span
+            >{{ cloud }}
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="imgSec p-5">
+          <img
+            alt=""
+            src="https://cbnits-web-live.s3.amazonaws.com/haboot2-1606989729418.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cloudera service section end-->
+
+  <!--domain section start-->
+  <div class="darkbg py-5">
+    <div class="themed-container container">
+      <div class="cloudera text-center">
+        <h6 class="mb-3">Domain <span class="skycolor">Expertise</span></h6>
+      </div>
+      <div class="d-flex align-items-center justify-content-center row">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let expertise of expertiseDomainArray">
+          <div class="expertise text-center mt-4">
+            <div class="expertiseimg">
+              <img
+                src="{{expertise.image}}"
+                alt=""
+              />
+            </div>
+            <span>{{ expertise.name }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" (click)="hireUs()" class="btn btn-primary">Hire Us</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--domain section end-->
+
+  <!-- Footer section starts here -->
+  <app-footer></app-footer>
+  <!-- Footer section ends here -->

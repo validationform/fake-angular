@@ -1,0 +1,216 @@
+<app-header
+  [backgroundImage]="backgroundHireUsImage"
+  [headerTitle]="headerHireUsTitle"
+  [headerSpan]="headerHireUsSpan"
+  [headerParaOne]="headerHireUsParaOne"
+  [headerParaTwo]="headerHireUsParaTwo"
+  [headerLanguageArray]="headerHireUsLanguageArray"
+>
+</app-header>
+<!-- Header Section Ends Start Body Section-->
+
+<div class="hirre py-5">
+  <form [formGroup]="hireUs">
+    <div class="themed-container hirre-container container">
+      <h2>select as many of <span class="skycolor">these as apply</span></h2>
+      <div class="mb-5 row">
+        <div class="col-xl-3" *ngFor="let lang of languageArray">
+          <div class="form-check">
+            <label class="form-check-label"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                formControlName="language"
+              />&nbsp; {{ lang.name }}</label
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-center user-hire-form pt-5 row"
+      >
+        <div class="col-md-10 col-lg-10 col-xl-10">
+          <form class="w-100">
+            <div class="mb-2 form-row">
+              <div class="col-md-6">
+                <div class="px-4 form-group">
+                  <label for="fullname" class="">Full name*</label
+                  ><input
+                    name="fullName"
+                    id="full name"
+                    placeholder="Enter your full name"
+                    type="text"
+                    class="form-control"
+                    aria-invalid="false"
+                    value=""
+                    formControlName="fullName"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="px-4 form-group">
+                  <label for="exampleEmail" class="">Where are you from*</label>
+                  <select
+                    name="country"
+                    id="exampleSelect"
+                    class="selectclass"
+                    aria-invalid="false"
+                    formControlName="country"
+                  >
+                    <option value="" disabled selected>Select Country</option>
+                    <option
+                      *ngFor="let country of countries"
+                      [value]="country.name"
+                    >
+                      {{ country.name }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="px-4 form-group">
+                  <label for="contactNo" class="">Contact no*</label
+                  ><input
+                    name="contactNo"
+                    id="number"
+                    placeholder="Enter your contact no"
+                    type="number"
+                    class="form-control"
+                    aria-invalid="false"
+                    value=""
+                    formControlName="contactNo"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="px-4 form-group">
+                  <label for="email" class="">Email*</label
+                  ><input
+                    name="email"
+                    id="userEmail"
+                    placeholder="Enter your email"
+                    type="email"
+                    class="form-control"
+                    aria-invalid="false"
+                    value=""
+                    formControlName="email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div value="" required="" class="px-4 row form-group">
+              <label for="exampleEmail" class="col-sm-2 col-form-label"
+                >type of hiring*</label
+              >
+              <div class="d-flex align-items-center col-sm-10">
+                <div class="mr-4 form-check">
+                  <label class="form-check-label"
+                    ><input
+                      name="type"
+                      type="radio"
+                      class="form-check-input"
+                      value="monthly"
+                      formControlName="type"
+                    />
+                    &nbsp; monthly</label
+                  >
+                </div>
+                <div class="mr-4 form-check">
+                  <label class="form-check-label"
+                    ><input
+                      name="type"
+                      type="radio"
+                      class="form-check-input"
+                      value="fixed"
+                      formControlName="type"
+                    />
+                    &nbsp; fixed</label
+                  >
+                </div>
+                <div class="mr-4 form-check">
+                  <label class="form-check-label"
+                    ><input
+                      name="type"
+                      type="radio"
+                      class="form-check-input"
+                      value="decide later"
+                      formControlName="type"
+                    />
+                    &nbsp; decide later</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="px-4 form-group">
+                  <label for="text" class="">your note*</label
+                  ><textarea
+                    rows="6"
+                    name="note"
+                    id="textarea"
+                    placeholder=""
+                    class="form-control"
+                    aria-invalid="false"
+                    formControlName="note"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="text-center submit-btn row">
+              <button type="button" class="btn btn-primary" (click)="hire()">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--Monthly basis Hiring Section start-->
+<div class="hire-process-wrapper py-5">
+  <div class="themed-container container">
+    <h2>monthly-basis <span class="skycolor">hiring process</span></h2>
+    <div class="d-flex align-items-center row">
+      <div class="col">
+        <div class="imgSec">
+          <img
+            src="https://cbnits.s3.us-east-1.amazonaws.com/lineArrowRound.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Monthly basis Hiring Section End-->
+
+<!--Fixed basis hiring section Start-->
+<div class="monthly-based py-5">
+  <div class="themed-container container">
+    <h2 class="mb-5">
+      Fixed-basis <span class="skycolor">hiring process</span>
+    </h2>
+    <div class="d-flex align-items-center justify-content-center row">
+      <div
+        class="mb-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4"
+        *ngFor="let fix of fixedProcess"
+      >
+        <div class="fix-buget-process d-flex align-items-center">
+          <div>
+            <img src="{{ fix.image }}" alt="img" />
+          </div>
+          <div class="fixedmotnPara">
+            <p>{{ fix.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fixed basis hiring section End-->
+
+<!--Footer Section start-->
+<app-footer></app-footer>
+<!-- Footer section end-->

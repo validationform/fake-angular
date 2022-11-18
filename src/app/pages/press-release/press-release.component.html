@@ -1,0 +1,28 @@
+<app-header [backgroundImage]="backgroundPressReleaseImage" [headerTitle]="headerPressReleaseTitle" [headerParaOne]="headerPressReleaseParaOne"
+    [headerLanguageArray]="headerPressReleaseLanguageArray">
+</app-header>
+
+<!-- press-release blocks page data start-->
+<div class="press-release">
+    <div class="width-center">
+        <div class="content-width" *ngFor="let index of pressReleaseBlockArray">
+            <div class="images">
+                <div class="newsImgBg" [routerLink]="['/press-release/article',index._id]"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{index.imageUrl}});">
+                    <p class="pressHead">{{index.category}}</p>
+                </div>
+                <div class="image-details">
+                    <p id="margin-bootom">{{index.metaDescription}}</p>
+                    <p><span id="change-color">{{index.added_date |date:'mediumDate'}}&nbsp;{{index.added_date
+                            |date:'shortTime'}}</span>&nbsp;|&nbsp;<span id="span-color">{{index.createdBy}}</span></p>
+                </div>
+                <div class="read-more"><a href="#" [routerLink]="['/press-release/article',index._id]">
+                        <h6 >Read More</h6>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- press-release blocks page data end-->
+
+<app-footer></app-footer>

@@ -1,0 +1,354 @@
+.language {
+    font-family: "Lato", sans-serif;
+}
+.topDetails p {
+    font-size: 17px;
+    cursor: default;
+    font-weight: 400;
+    color: #000;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin: 0 0 16px;
+    cursor: default;
+}
+.topDetails {
+    width: 100%;
+    margin: 100px 0;
+    cursor: default;
+    padding: 0 150px;
+}
+.text-center {
+    text-align: center!important;
+}
+.skybg {
+    background-color: #22bbf7;
+    padding: 70px 0 60px 0;
+}
+.morethan {
+    width: 100%;
+}
+.morethan h2 {
+    font-size: 45px;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+    color: #fff;
+}
+
+.morethan h2 span {
+    font-size: 45px;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.deliverOptn {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    cursor: default;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+.morethan h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+    cursor: default;
+    color: #fff;
+}
+.red {
+    color: #f15a29;
+    font-size: 45px;
+    cursor: default;
+    font-weight: 700;
+}
+.deliverOptnNo {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: #1dbdfc;
+    cursor: default;
+}
+.skybg {
+    background-color: #22bbf7;
+    padding: 70px 0 60px 0;
+}
+.deliverDetails {
+    padding-left: 10px;
+}
+.deliverDetails span {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: default;
+}
+.dashBorder {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #0000;
+    border: 1px dashed #fff;
+    display: flex;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+}
+.detailsBox {
+    /* background-image: url(/4066abb….png); */
+    background-image: url(https://www.cbnits.com/4066abb7e9d94b59b7b50a50828e1735.png);
+    background-size: cover;
+    width: 100%;
+    margin: 100px 0;
+    padding: 40px 50px;
+}
+.detailsBox p {
+    padding: 0;
+    cursor: default;
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+b, strong {
+    font-weight: bolder;
+}
+button{
+    margin-top:70px;
+    background-color: rgb(0, 148, 68);
+    border-color: rgb(0, 148, 68);
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+}
+.btn-primary:hover{
+    background-color: #009444;
+    border-color: #009444;
+  }
+  .btn-primary:focus{
+  border-radius: 5px;
+  outline: none;
+  background-color: #009444;
+  border-style: none;
+  box-shadow:0 0 0 3px #1dbdfc ;
+  }
+.py-5 {
+    padding-bottom: 3rem!important;
+}
+.technology {
+    width: 100%;
+}
+.technology h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    cursor: default;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.techstack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: default;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+.techstack .teckStackImg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.techstack .teckStackName {
+    padding-left: 15px;
+    cursor: default;
+}
+.techstack .teckStackName span {
+    font-size: 16px;
+    cursor: default;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+@media (max-width: 375px) {
+    .topDetails {
+      margin: 20px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 14px;
+    }
+    .morethan h2 {
+      font-size: 35px !important;
+    }
+    .morethan h2 span {
+      font-size: 35px !important;
+    }
+    .technology h2 {
+      font-size: 35px !important;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      /* background-color: #f15a29; */
+    }
+  }
+  
+  @media (min-width: 376px) and (max-width: 425px) {
+    .topDetails {
+      margin: 25px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 14px;
+    }
+    .morethan h2 {
+      font-size: 35px !important;
+    }
+    .morethan h2 span {
+      font-size: 35px !important;
+    }
+    .technology h2 {
+      font-size: 35px !important;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      /* background-color: #f15a29; */
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 575px) {
+    .topDetails {
+      margin: 25px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 14px;
+    }
+    .morethan h2 {
+      font-size: 35px !important;
+    }
+    .morethan h2 span {
+      font-size: 35px !important;
+    }
+    .technology h2 {
+      font-size: 35px !important;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      /* background-color: #f15a29; */
+    }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .topDetails {
+      margin: 27px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 16px;
+    }
+    .morethan h2 {
+      font-size: 27px;
+    }
+    .morethan h2 span {
+      font-size: 27px;
+    }
+    .technology h2 {
+      font-size: 27px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      /* background-color: #f15a29; */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .topDetails {
+      margin: 27px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 16px;
+    }
+    .morethan h2 {
+      font-size: 30px;
+    }
+    .morethan h2 span {
+      font-size: 30px;
+    }
+    .technology h2 {
+      font-size: 30px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      /* background-color: #f15a29; */
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .topDetails {
+      margin: 30px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 16px;
+    }
+    .morethan h2 {
+      font-size: 35px;
+    }
+    .morethan h2 span {
+      font-size: 35px;
+    }
+    .technology h2 {
+      font-size: 35px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      /* background-color: #f15a29; */
+    }
+  }
+  

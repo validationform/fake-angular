@@ -1,0 +1,62 @@
+.webpage {
+    width: 100%;
+}
+
+.webpage h2 {
+    font-size: 45px;
+    font-family: 'Lato' sans-serif;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.webpage span {
+    font-size: 17px;
+    font-family: 'Lato' sans-serif;
+    cursor: default;
+    text-align: justify;
+}
+@media (max-width: 375px){
+    .webpage h2 {
+        font-size: 20px;
+    }
+    .imgSec img{
+        width:100%;
+    }
+    .webpage span {
+        font-size: 14px;
+    }
+}
+@media (min-width: 426px) and (max-width: 575px){
+    .webpage h2 {
+         font-size: 26px;
+    }
+    .imgSec img{
+        width:100%;
+    }
+    .webpage span {
+        font-size: 16px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .webpage h2 {
+        font-size: 29px;
+    }
+    .webpage span {
+        font-size: 16px;
+    }
+    .imgSec img{
+        width:100%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1199px){ 
+    .webpage h2 {
+        font-size: 38px;
+    }
+    .imgSec img{
+        width:100%;
+    }
+    .webpage span {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,65 @@
+.language {
+    font-family: "Lato", sans-serif;
+}
+.py-5 {
+    padding-bottom: 3rem!important;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+}
+.webpage {
+    width: 100%;
+}
+.webpage h2 {
+    font-size: 45px;
+    line-height: 54px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+}
+.webpage h2 span {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+}
+.webpage span {
+    font-size: 17px;
+    line-height: 26px;
+    cursor: default;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.imgSec img{
+    width:100%;
+}
+
+.center-div {
+    text-align: justify;
+}
+@media (max-width: 767px){
+   .imgSec img{
+     width:100%;
+   }
+   .webpage h2 {
+    font-size: 20px;
+    }
+    .webpage h2 span {
+        font-size: 20px;
+    }
+    .webpage span {
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .imgSec img{
+        width:100%;
+      }
+    }
+    @media (min-width: 1025px) and (max-width: 1199px) {
+        .imgSec img{
+            width:100%;
+          }
+    }

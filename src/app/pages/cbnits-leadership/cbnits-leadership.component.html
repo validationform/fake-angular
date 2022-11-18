@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundCbnitsLeadershipImage" [headerTitle]="headerCbnitsLeadershipTitle" [headerParaOne]="headerCbnitsLeadershipParaOne"
+    [headerLanguageArray]="headerCbnitsLeadershipLanguageArray">
+</app-header>
+
+<!-- cbnits-leadership page data start -->
+<div class="cbnits-growing">
+    <div class="cbnits-growing-content">
+        <div class="details">
+            <h2>{{cbnitsLeadershipById.metaTitle}}</h2>
+            <p [innerHTML]="cbnitsLeadershipById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- cbnits-leadership page data end -->
+
+<app-footer></app-footer>

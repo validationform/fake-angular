@@ -1,0 +1,36 @@
+<div class="fullstack-tab py-5">
+  <div class="themed-container text-center tab-container container">
+    <h2>{{ firstTitle }} <a class="skycolor" style="text-decoration:none">{{ firstTitleBlueText }}</a></h2>
+    <h2 class="skycolor mb-5">{{ secondTitle }}</h2>
+    <p class="mb-5"> {{ content }}</p>
+    <div class="d-flex align-items-center row">
+      <div style="width: 100%">
+        <ul class="nav nav-tabs">
+          <li class="nav-item" *ngFor="let stackRow of technologyStackArray" (click)="onSkillClick(stackRow)">
+            <a class="nav-link" [ngClass]="{'active': rowActive === stackRow.id }">{{ stackRow.name }}</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <div class="mt-5 row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" *ngFor="let techarray of techSkillsData">
+                <div class="tech-logo">
+                  <div class="tech-logo-img">
+                    <img src="{{ techarray.image }}" alt="" />
+                  </div>
+                  <div class="tech-logo-name">{{ techarray.name }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="button" (click)="hireus()" class="btn btn-primary">
+        Hire Us
+      </button>
+    </div>
+  </div>
+</div>

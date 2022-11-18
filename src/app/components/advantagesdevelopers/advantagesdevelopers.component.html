@@ -1,0 +1,37 @@
+<div class="Alanguage py-5">
+  <div class="Adarkbg">
+    <div class="themed-container container">
+      <div class="d-flex align-items-center row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="imgSec">
+            <img alt="" src="{{ advantagesImage }}" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="Aadvantages">
+            <h6 style="margin-right: 8px">
+              {{ advantagesHeading }}
+            <span class="skycolor"> {{ advantagesSpan }} </span>
+            </h6>
+            <div *ngFor="let advantages of advantagesArray">
+              <p>
+                <span>
+                  <img src="{{ advantagesListIcon }}" alt="" /> </span
+                >{{ advantages }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" *ngIf="advantagesButtonName">
+        <button
+          type="button"
+          (click)="hireUs()"
+          class="btn btn-primary"
+        >
+          {{ advantagesButtonName }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

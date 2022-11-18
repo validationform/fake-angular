@@ -1,0 +1,21 @@
+<app-header [backgroundImage]="backgroundGlobalRadianceImage" [headerTitle]="headerGlobalRadianceTitle"
+    [headerParaOne]="headerGlobalRadianceParaOne" [headerLanguageArray]="headerGlobalRadianceLanguageArray">
+</app-header>
+
+<!-- global-Radiance page data started -->
+<div class="global-radiance">
+    <div class="global-radiance-content">
+        <h2>{{newsGlobalRadianceById.metaTitle}}</h2>
+    </div>
+    <div class="author">
+
+        <p id="font-bolder">Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical
+            Advisor, CBNITS</p> <br>
+        <p [innerHtml]="newsGlobalRadianceById.newsContent"></p>
+        <p>The original source of the article can be found <a
+                href="https://globalradiancereview.com/feature/cbnitis-achieve-your-business-goals"> HERE.</a></p>
+    </div>
+</div>
+<!-- global-Radiance page data end -->
+
+<app-footer></app-footer>

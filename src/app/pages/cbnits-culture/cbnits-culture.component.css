@@ -1,0 +1,38 @@
+.cbnits-culture {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif !important;
+    color: #212529;
+}
+
+.cbnits-culture-content {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.details {
+    width: 100%;
+    height: auto;
+}
+
+.details h2 {
+    font-size: 42px;
+    cursor: default;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #212529;
+}
+
+.details #cbnits {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.details p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 25px;
+    cursor: default;
+}

@@ -1,0 +1,192 @@
+<!-- Header section starts here -->
+<app-header
+  [backgroundImage]="backgroundImage"
+  [headerTitle]="headerTitle"
+  [headerSpan]="headerSpan"
+  [headerParaOne]="headerParaOne"
+  [headerParaTwo]="headerParaTwo"
+  [headerLanguageArray]="headerLanguageArray"
+></app-header>
+<!--Header section end here -->
+
+<!--career journey Section Starts-->
+<div class="language py-2">
+  <div class="transformWrapper py-5">
+    <div class="themed-container container">
+      <div class="d-flex align-items-center justify-content-between row">
+        <div class="col-sm-6">
+          <div class="imgSec">
+            <img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/career-left.png"
+              alt="next"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="whyTitle">
+            <h3>
+              Begin your technology career journey with
+              <span class="cbnitscolor">CBNITS</span> &amp; Create the future
+              you want
+            </h3>
+            <p class="mt-4 mb-4">
+              You can check the latest job openings here if you are looking to
+              be a part of a young, vibrant and growing team. Take your first
+              step to an incredible career with us. Be a part of our talent pool
+              of 400+ expert level software engineers.
+            </p>
+          </div>
+          <ul class="listStyle" *ngFor="let project of complectedProject">
+            <li>{{ project }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--career journey Section End-->
+  <!--four reason Section starts -->
+  <div class="fourReacson-wrapper">
+    <div class="themed-container py-5 container">
+      <div class="fourReacson text-center">
+        <h2 class="mb-5">
+          Discover a career with a greater purpose at <br /><span
+            class="skycolor"
+            >CBNITS</span
+          >
+        </h2>
+      </div>
+      <form class="">
+        <div class="d-flex justify-content-between row">
+          <div
+            class="mb-4 col-md-6 col-lg-3 col-xl-3"
+            *ngFor="let four of reason; let i = index"
+          >
+            <div class="we-container we-cnt-new fourResonsBX">
+              <div class="num-txt num-txt-new border-bottom mb-3 pb-3">
+                <span>{{ i + 1 }}</span>
+                <h6>{{ four.title }}</h6>
+              </div>
+              <p class="desp">
+                {{ four.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--four reason Section starts -->
+  <!--who we are Section Starts -->
+  <div class="oppurtunity-wrapper">
+    <div class="themed-container py-5 container">
+      <div class="opportunity text-center">
+        <h2>Who<span class="skycolor"> We Are</span></h2>
+        <p class="my-4">
+          <b>CBNITS LLC an MNC company in Fremont, USA</b> is the place where
+          you are inspired to explore your passions, where your talent is
+          nurtured and cultivated.<b
+            >We have one development center in India (Kolkata) providing full
+            IT</b
+          >
+          solutions to our clients from the last 7 years. We are mostly dealing
+          with projects like - Big Data Hadoop, Dynamics 365, IoT, SAP, Machine
+          Learning, Deep Lea rning, Blockchain, Flutter, Reactjs &amp; React
+          Native, DevOps &amp; Cloud AWS, Golang etc.
+        </p>
+        <p>
+          <b>Website:</b> www.cbnits.com<br /><b>USA Address:</b> 875 Yakima
+          Drive, Fremont, California-94539<br /><b>India Address:</b> 5th Floor,
+          Ecospace, Premises - 11F.12, Campus - 2B, Action Area II, New Town,
+          Kolkata - 700 156.
+        </p>
+        <br />
+        <h2>
+          Current career <br /><span class="skycolor"
+            >opportunities at Cbnits</span
+          >
+        </h2>
+        <p class="my-4">
+          You can check the latest job openings here if you are looking to be a
+          part of a young, vibrant and growing team. Take your first step to an
+          incredible career with us.
+        </p>
+      </div>
+      <!--who we are Section End -->
+      <div class="d-flex justify-content-between row">
+        <div class="col-md-12">
+          <!-- Accordion Starts -->
+          <div
+            class="accWrap mb-3"
+            *ngFor="let main of opportunityArray; let i = index"
+          >
+            <div
+              [ngClass]="
+                dupId === main._id && isOpen == true
+                  ? 'collapsTitle d-flex active'
+                  : 'collapsTitle d-flex'
+              "
+              (click)="onToggle(main._id)"
+            >
+              <p class="mb-0">{{ main.careerTitle }}</p>
+              <span
+                ><img
+                  src="https://cbnits.s3.us-east-1.amazonaws.com/accArrow.png"
+                  alt="next"
+                  class="img-fluid"
+              /></span>
+            </div>
+            <div
+              [ngClass]="isOpen == true ? 'collapse show' : 'collapse '"
+              *ngIf="main._id === dupId"
+            >
+              <div class="collapseContent py-4">
+                <div>
+                  <p class="pl-xl-5 pl-lg-5 pl-md-4 cllp-p">
+                    {{ main.careerExperienceYr }}
+                  </p>
+                  <p class="pl-xl-5 pl-lg-5 pl-md-4 cllp">
+                    <b>Location:</b>{{ main.careerLocation }}
+                  </p>
+                  <div class="d-flex align-items-center row">
+                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                      <div class="imgSec">
+                        <img src="{{ main.careerImage }}" alt="career image" />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                      <p class="cllp-p"><b>Requirements:</b></p>
+                      <ul
+                        class="listStyle"
+                        *ngFor="let requir of main.careerDescription"
+                      >
+                        <li>
+                          {{ requir }}
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <button class="btn btn-success">
+                          <a
+                            [href]="getStringifiedAssets(demoAssets, demoSubject)"
+                            style="color: white; text-decoration: none"
+                            >Apply Now</a
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--accordion ends-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section Starts-->
+<app-footer></app-footer>
+<!-- Footer Section End-->

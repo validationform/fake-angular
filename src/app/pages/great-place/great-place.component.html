@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundGreatPlaceImage" [headerTitle]="headerGreatPlaceTitle" [headerParaOne]="headerGreatPlaceParaOne"
+    [headerLanguageArray]="headerGreatPlaceLanguageArray">
+</app-header>
+
+<!-- great-place page data start -->
+<div class="great-place">
+    <div class="great-place-content">
+        <div class="details">
+            <h1>{{greatPlaceById.metaTitle}}</h1>
+            <p [innerHTML]="greatPlaceById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- great-place page data end -->
+
+<app-footer></app-footer>

@@ -1,0 +1,59 @@
+.booming-industry {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.booming-industry-content {
+    width: 76%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.booming-industry-content h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #212529;
+    cursor: default;
+}
+
+.author {
+    width: 76%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.author #font-bolder {
+    font-size: 16px;
+    line-height: 24px;
+    line-break: normal;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.author p {
+    font-size: 16px;
+    line-break: normal;
+    cursor: default;
+    margin-bottom: 24px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #055fc0;
+}
+
+.author h2 {
+    font-size: 28px;
+    cursor: default;
+}
+
+.author h6 {
+    font-size: 16px;
+    cursor: default;
+    font-weight: bolder;
+}

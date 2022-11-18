@@ -1,0 +1,65 @@
+.home-connected {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif !important;
+    color: #212529;
+    cursor: default;
+}
+
+.home-connected .content {
+    width: 76%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content-details h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 40px;
+    cursor: default;
+}
+
+.author #font-bolder {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #055fc0;
+}
+
+.author p {
+    font-size: 16px;
+    line-height: 24px;
+    line-break: normal;
+}
+
+.author #font-bolder {
+    cursor: default;
+}
+
+.author h4 {
+    font-size: 16px;
+    line-height: 32px;
+    cursor: default;
+    font-weight: bolder;
+    color: #212529;
+}
+
+.author h2 {
+    font-size: 30px;
+    cursor: default;
+    font-weight: 500;
+}
+
+.author h3 {
+    font-size: 32px;
+    cursor: default;
+    font-weight: 500;
+}

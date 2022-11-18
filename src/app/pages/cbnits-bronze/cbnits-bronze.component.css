@@ -1,0 +1,32 @@
+.cbnits-bronze {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif !important;
+    color: #212529;
+}
+
+.cbnits-bronze-content {
+    width: 76.5%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.details {
+    width: 100%;
+    height: auto;
+}
+
+.details h1 {
+    font-size: 42px;
+    font-weight: 600;
+    cursor: default;
+    margin-bottom: 40px;
+}
+
+.details p {
+    font-size: 16px;
+    cursor: default;
+    text-align: justify;
+    margin-bottom: 25px;
+}

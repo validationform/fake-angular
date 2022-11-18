@@ -1,0 +1,244 @@
+<!-- Navbar section starts here -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section class="navbar-section">
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">
+          <img src="https://cbnits.s3.us-east-1.amazonaws.com/new-logo.png" class="nav-image">
+        </a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn">
+          <fa-icon [icon]="faXmarkCircle" style="color: #242526;"></fa-icon>
+        </label>
+        <li><a href="#" class="nav-a">Home</a></li>
+        <li><a [routerLink]="['/aboutus']">About</a></li>
+        <li><a [routerLink]="['/contact']">Contact</a></li>
+        <li>
+          <a class="desktop-item" style="cursor:pointer">Studio</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Studio</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <div class="header-hr">
+                  <header class="desktop-item">Web Development</header>
+                </div>
+                <!-- <hr class="header-hr desktop-item"> -->
+                <ul class="mega-links desktop-item">
+                  <li><a [routerLink]="['/angular']" class="web-a">Angular</a></li>
+                  <li><a [routerLink]="['/react']" class="web-a">React</a></li>
+                  <li><a [routerLink]="['/full-stack']" class="web-a">Full-Stack</a></li>
+                  <li><a [routerLink]="['/ui-ux']" class="web-a">Ui/Ux</a></li>
+                </ul>
+        <li class="mobile-item">
+          <!-- <a href="#" class="desktop-item">DEDICATED HIRING</a> -->
+          <input type="checkbox" id="showMega-web">
+          <label for="showMega-web" class="mobile-item">Web Development</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <ul class="mega-links">
+                  <li><a [routerLink]="['/angular']">Angular</a></li>
+                  <li><a [routerLink]="['/react']">React</a></li>
+                  <li><a [routerLink]="['/fullstack']">Full-Stack</a></li>
+                  <li><a [routerLink]="['/uiux']">Ui/Ux</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="showMega-back">
+          <label for="showMega-back" class="mobile-item">Backend</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <ul class="mega-links">
+                  <li><a [routerLink]="['/node']">Node</a></li>
+                  <li><a [routerLink]="['/golang']">Golang</a></li>
+                  <li><a [routerLink]="['/hadoop']">Hadoop</a></li>
+                  <li><a [routerLink]="['/dynamic-365']">Dynamic-365</a></li>
+                  <li><a [routerLink]="['/blockchain']">Blockchain</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="showMega-mobile">
+          <label for="showMega-mobile" class="mobile-item">Mobile Development</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <ul class="mega-links">
+                  <li><a [routerLink]="['/mobileApp']">Mobile App</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="showMega-sap">
+          <label for="showMega-sap" class="mobile-item">Sap</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <ul class="mega-links">
+                  <li><a [routerLink]="['/sap']">Sap</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="showMega-others">
+          <label for="showMega-others" class="mobile-item">Others</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <ul class="mega-links">
+                  <li><a [routerLink]="['/cloud']">Cloud-Development</a></li>
+                  <li><a [routerLink]="['/clouddev']">Cloud-DevOps</a></li>
+                  <li><a [routerLink]="['/quality']">Quality Engineering</a></li>
+                  <li><a [routerLink]="['/softwaresupport']">Software-Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+    </div>
+
+
+    <div class="row">
+      <div class="header-hr">
+        <header class="desktop-item">backend</header>
+      </div>
+      <!-- <hr class="header-hr desktop-item"> -->
+      <ul class="mega-links desktop-item">
+        <li><a class="web-a" [routerLink]="['/node']">Node</a></li>
+        <li><a class="web-a" [routerLink]="['/golang']">Golang</a></li>
+        <li><a class="web-a" [routerLink]="['/hadoop']">Hadoop</a></li>
+        <li><a class="web-a" [routerLink]="['/dynamic-365']">Dynamic-365</a></li>
+        <li><a class="web-a" [routerLink]="['/blockchain']">Blockchain</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="header-hr">
+        <header class="desktop-item">Mobile Development</header>
+      </div>
+      <!-- <hr class="header-hr desktop-item"> -->
+      <ul class="mega-links desktop-item">
+        <li><a  class="web-a" [routerLink]="['/mobileApp']">Mobile App</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="header-hr">
+        <header class="desktop-item" [routerLink]="['/sap']">Sap</header>
+      </div>
+      <!-- <hr class="header-hr desktop-item"> -->
+      <ul class="mega-links desktop-item">
+        <li><a class="web-a" [routerLink]="['/sap']">Sap</a></li>
+      </ul>
+    </div>
+    <div class="row" style="width: 25%;">
+      <div class="header-hr">
+        <header class="desktop-item">Others</header>
+      </div>
+      <!-- <hr class="header-hr desktop-item"> -->
+      <ul class="mega-links desktop-item">
+        <li><a class="web-a" [routerLink]="['//cloud-development']">Cloud-Development</a></li>
+        <li><a class="web-a" [routerLink]="['/cloud-devops']">Cloud-DevOps</a></li>
+        <li><a class="web-a" [routerLink]="['/quality-engineering']">Quality Engineering</a></li>
+        <li><a class="web-a" [routerLink]="['/software-support']">Software-Support</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+      <a class="desktop-item" style="cursor:pointer">Dedicated Hiring</a>
+      <input type="checkbox" id="showMega1">
+      <label for="showMega1" class="mobile-item">Dedicated Hiring</label>
+      <div class="mega-box">
+        <div class="content">
+          <div class="row">
+            <ul class="mega-links" style="width: 500px; margin-left: 530px;">
+              <li><a [routerLink]="['/hireus']" class="dedicated">Dedicated Hiring</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a class="desktop-item" style="cursor:pointer">Insights & News</a>
+      <input type="checkbox" id="showMega2">
+      <label for="showMega2" class="mobile-item">Insights & News</label>
+      <div class="mega-box">
+        <div class="content">
+          <div class="row">
+            <ul class="mega-links" style="width: 500px; margin-left: 400px; text-align: center;">
+              <li><a  class="dedicated" [routerLink]="['/news']">News</a></li>
+              <li><a  class="dedicated" [routerLink]="['/press-release']">Press Release</a></li>
+              <li><a href="https://cbnits.blogspot.com/?m=1" class="dedicated">Blogs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn">
+      <fa-icon [icon]="faBars" style="color: #242526;"></fa-icon>
+    </label>
+    </div>
+    <div style="display: flex;">
+      <div style="background-color: rgb(0, 148, 68); width: 33%; height: 2px;"></div>
+      <div style="background-color: rgb(127, 63, 152); width: 34%; height: 2px;"></div>
+      <div style="background-color: rgb(29, 189, 252); width: 33%; height: 2px;"></div>
+    </div>
+  </nav>
+</section>
+<!-- Navbar section ends here -->
+
+<!-- Header section starts here -->
+
+<section class="header-section">
+
+  <div class="tech-img" *ngIf="backgroundImage"
+    [ngStyle]="{'background-image': 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('+ backgroundImage +')'}">
+
+
+    <div class="themed-container container">
+      <p class="tech-title-info">
+        <span><abbr><img src="https://cbnits.s3.us-east-1.amazonaws.com/msg.png" alt="msg" />
+          </abbr>business@cbnits.com</span><span><abbr><img src="https://cbnits.s3.us-east-1.amazonaws.com/usa.png"
+              alt="phone" /> </abbr>+1669-213-8571</span><span><abbr><img
+              src="https://cbnits.s3.us-east-1.amazonaws.com/singapore.png" alt="phone" />
+          </abbr>+65-31585521</span><span><abbr><img src="https://cbnits.s3.us-east-1.amazonaws.com/india.png"
+              alt="phone" /> </abbr>+91-9674533118</span>
+      </p>
+      <img src="https://cbnits.s3.us-east-1.amazonaws.com/CertificationBadge.jpg" alt="badge"
+        class="certificateBadge" />
+      <div class="tech-middle-section">
+        <h2 class="skycolor">
+          {{headerTitle}}
+          <span class="whiteColor">{{headerSpan}}</span>
+        </h2>
+        <p class="optimal">
+          {{headerParaOne}}
+        </p>
+        <p class="optimal">{{headerParaTwo}}</p>
+        <a href="https://drive.google.com/file/d/1k19zoiIFFruQBEqp8ZfxradMFVqFihKJ/preview" target="_blank">
+          <p class="frame">{{headerFile}}</p>
+        </a>
+      </div>
+      <div class="tech-lang-container">
+        <div class="tech-lang-wrapper" *ngFor="let arr of headerLanguageArray">
+          <abbr>
+            <img class="logo" src="{{arr.image}}" alt="Languages">
+          </abbr>
+          <span>{{arr.name}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,21 @@
+<app-header [backgroundImage]="backgroundCbnitsImage" [headerTitle]="headerCbnitsTitle"
+    [headerParaOne]="headerCbnitsParaOne" [headerLanguageArray]="headerCbnitsLanguageArray">
+</app-header>
+
+<!-- cbnits page data start -->
+<div class="cbnits">
+    <div class="header">
+        <h2>{{cbnitsById.metaTitle}}</h2>
+        <h6>Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical Advisor, CBNITS</h6>
+    </div><br><br>
+    <div class="author" [innerHTML]="cbnitsById.newsContent">
+    </div>
+    <div class="author">
+        <p>The original source of the article can be found <a
+                href="https://thesiliconreview.net/IT-service/cbnits-unleash-business-potential-technologies"> HERE.</a>
+        </p>
+    </div>
+</div>
+<!-- cbnits page data end -->
+
+<app-footer></app-footer>

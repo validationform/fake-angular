@@ -1,0 +1,60 @@
+<!-- Header section starts here -->
+
+<app-header
+  [backgroundImage]="backgroundSecurityImage"
+  [headerTitle]="headerSecurityTitle"
+  [headerSpan]="headerSecuritySpan"
+  [headerLanguageArray]="headerSecurityLanguageArray"
+>
+</app-header>
+
+<!-- Header section ends here -->
+
+<!-- Overview section starts here -->
+
+<app-overview
+  [overviewHeading]="overviewHeading"
+  [overviewSpan]="overviewSpan"
+  [overviewImg]="overviewImg"
+>
+</app-overview>
+
+<!-- Overview section ends here -->
+
+<!-- what we did section starts here -->
+
+<app-wedid
+  [wedidHeading]="wedidHeading"
+  [wedidSpan]="wedidSpan"
+  [wedidArray]="wedidArray"
+>
+</app-wedid>
+
+<!-- what we did section ends here -->
+
+<!-- technology section starts here -->
+
+<app-technology
+  [techHeading]="techHeading"
+  [techSpan]="techSpan"
+  [techStackArray]="techStackArray"
+>
+</app-technology>
+
+<!-- technology section ends here -->
+
+<!-- hire us section starts here -->
+
+<div class="text-center" *ngIf="buttonName">
+  <button type="button" [routerLink]="['/hireus']" class="btn btn-primary">
+    {{ buttonName }}
+  </button>
+</div>
+
+<!-- hire us section ends here -->
+
+<!-- Footer section starts here -->
+
+<app-footer></app-footer>
+
+<!-- Footer section ends here -->

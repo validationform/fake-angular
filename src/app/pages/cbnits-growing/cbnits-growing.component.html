@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundCbnitsGrowingImage" [headerTitle]="headerCbnitsGrowingTitle" [headerParaOne]="headerCbnitsGrowingParaOne"
+    [headerLanguageArray]="headerCbnitsGrowingLanguageArray">
+</app-header>
+
+<!-- cbnits-growing page data start -->
+<div class="cbnits-growing">
+    <div class="cbnits-growing-content">
+        <div class="details">
+            <h2>{{cbnitsGrowingById.metaTitle}}</h2>
+            <p [innerHTML]="cbnitsGrowingById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- cbnits-growing page data end -->
+
+<app-footer></app-footer>

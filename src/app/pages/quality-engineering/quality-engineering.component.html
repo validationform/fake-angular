@@ -1,0 +1,89 @@
+<app-header [backgroundImage]="backgroundQualityEngineerImage" [headerTitle]="headerQualityEngineerTitle" [headerSpan]="headerQualityEngineerSpan"
+  [headerParaOne]="headerQualityEngineerParaOne" [headerLanguageArray]="headerQualityEngineerLanguageArray">
+</app-header>
+<!-- Section One Starts -->
+<div class="quality-bnits py-5">
+  <div class="themed-container container">
+    <div class="text-center quality-head">
+      <h2>Quality Testing</h2>
+      <h2 class="skycolor">Core Services Offerings</h2>
+    </div>
+    <div class="quality-para text-center">
+      <p>
+        CBNITS is a certified software testing company in Yakima Drive, Fremont,
+        California From strategy consulting to test automation our
+        highly-skilled resources are really available for dedicated hiring our
+        experienced quali-ty testing engineers can help you test the functional
+        and non functional aspects of a wide variety of software, web and mobile
+        applications
+      </p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center row">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" *ngFor="let cloud of cEngineering">
+        <div class="quality-deliverOptn mt-4">
+          <div class="quality-deliverOptnNo">
+            <div class="quality-dashBorder">
+              <span><img src="{{ cloud.img }}" alt="" /></span>
+            </div>
+          </div>
+          <div class="quality-deliverDetails">
+            <span>{{ cloud.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section One Ends-->
+<!-- Section two starts -->
+<div class="testing-process py-5">
+  <div class="themed-container container">
+    <div class="text-center testing-process-head">
+      <h2>Quality<span> Testing Process</span></h2>
+    </div>
+    <div class="d-flex text-center imgg row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <img src="https://cbnits.s3.us-east-1.amazonaws.com/qualityEng.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section Two Ends-->
+<!-- Section Three Starts -->
+<div class="themed-container">
+  <div class="container">
+    <div class="imgSec">
+      <img src="https://cbnits.s3.us-east-1.amazonaws.com/quaSec.png" alt="" />
+    </div>
+    <div class="text-center testing-bottamBanner">
+      <p>
+        CBNITS is an internationally quality engineering firm renowned for
+        providing top-notch software quality assurance and testing expertise.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Section Three Ends -->
+<!-- Section Four starts-->
+<div class="automation text-center py-5">
+  <div class="themed-container container">
+    <h2 class="mb-5">test <span class="skycolor">automation</span></h2>
+    <p>
+      Continuous testing is the backbone of continuous integration. At CBNITS,
+      we follow a process-oriented approach for the successful deployment of
+      test automation. By designing
+    </p>
+    <p>
+      an automation strategy aligned with enterprise goals, CBNITS enables
+      faster time-to- market for your enterprise apps.
+    </p>
+  </div>
+</div>
+<!-- Section four ends -->
+<!-- last Section-->
+<div class="text-center" style="height: 57px; margin-top: 20px">
+  <button type="button" class="btn btn-primary" (click)="hireus()">
+    Hire Us
+  </button>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundPoonamBachkhediImage" [headerTitle]="headerPoonamBachkhediTitle" [headerParaOne]="headerPoonamBachkhediParaOne"
+    [headerLanguageArray]="headerPoonamBachkhediLanguageArray">
+</app-header>
+
+<!-- poonam-bachkhedi page data start -->
+<div class="poonam-bachkhedi">
+    <div class="poonam-bachkhedi-content">
+        <div class="details">
+            <h1>{{poonamBachkhediById.metaTitle}}</h1>
+            <p [innerHTML]="poonamBachkhediById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- poonam-bachkhedi page data end -->
+
+<app-footer></app-footer>

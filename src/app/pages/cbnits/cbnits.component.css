@@ -1,0 +1,83 @@
+.cbnits {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif !important;
+    cursor: default;
+}
+
+.header {
+    width: 76%;
+    height: 260px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 25px;
+    color: #212529;
+}
+
+.header h2 {
+    font-size: 42px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.author {
+    width: 77%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.header h6 {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #055fc0;
+
+}
+
+.author h6 {
+    font-size: 16px;
+    line-height: 36px;
+    cursor: default;
+}
+
+.content {
+    height: auto;
+}
+
+.content p img {
+    width: 270px;
+    height: 200px;
+    float: right;
+    cursor: default;
+    margin: 10px;
+
+}
+
+.content p {
+    font-size: 16px;
+    display: block;
+    line-height: 24px;
+    cursor: default;
+
+}
+
+.content h3 {
+    font-size: 32px;
+    cursor: default;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+.content #color-change {
+    color: #ba372a;
+
+}

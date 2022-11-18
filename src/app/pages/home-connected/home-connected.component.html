@@ -1,0 +1,23 @@
+<app-header [backgroundImage]="backgroundHomeConnectedImage" [headerTitle]="headerHomeConnectedTitle" [headerParaOne]="headerHomeConnectedParaOne"
+    [headerLanguageArray]="headerHomeConnectedLanguageArray">
+</app-header>
+
+<!-- home-connected page data start -->
+<div class="home-connected">
+    <div class="content">
+        <div class="content-details">
+            <h1>{{homeConnectedById.metaTitle}}</h1>
+        </div>
+        <div class="author">
+            <p id="font-bolder">Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical
+                Advisor, CBNITS</p>
+            <p [innerHTML]="homeConnectedById.newsContent"></p><br>
+            <p>The original source of the article can be found <a
+                    href="https://www.forbes.com/sites/forbestechcouncil/2021/02/22/10-ways-to-boost-iot-security-in-smart-homes/?sh=492cd41a7891">
+                    HERE.</a></p>
+        </div>
+    </div>
+</div>
+<!-- home-connected page data end -->
+
+<app-footer></app-footer>

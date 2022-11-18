@@ -1,0 +1,123 @@
+<!-- Header section starts here -->
+<app-header
+  [backgroundImage]="dynamicBackgroundImage"
+  [headerTitle]="dynamicHeaderTitle"
+  [headerSpan]="dynamicHeaderSpan"
+  [headerParaOne]="dynamicHeaderParaOne"
+  [headerLanguageArray]="dynamicHeaderLanguageArray"
+>
+</app-header>
+<!-- Header section ends here -->
+
+<!-- dynamic 365 section starts here -->
+<div class="dyanamicCbnits py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-lg-6 col-xl-6">
+        <div class="imgSec">
+          <img
+            alt="image"
+            src="https://cbnits-web-live.s3.amazonaws.com/365-1606917666720.png"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-6">
+        <div class="dyanamicCbnits-Text">
+          <p>
+            <span>Dynamic </span> <span class="skycolor"> 365</span> {{ dynamicPara }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- dynamic 365 section ends here -->
+
+<!-- microsoft dynamic section starts here -->
+<app-microsoft
+  [microsoftHeading]="microsoftHeading"
+  [microsoftSpan]="microsoftSpan"
+  [microsoftPara]="microsoftPara"
+  [microsoftArray]="microsoftArray"
+>
+</app-microsoft>
+<!-- microsoft dynamic section ends here -->
+
+<!-- we help section starts here -->
+<section class="wehelp" style="padding-top: 50px">
+  <div class="text-center seam-head">
+    <h2>We Help Seamless Migration</h2>
+    <h2 class="skycolor">To Dynamic 365</h2>
+    <p>
+      Our Dynamics 365 expert can help you migrate from Dynamic CRM, Salesforce,
+      SL, NAV, QuickBooks and other application to Dynamic 365.
+    </p>
+  </div>
+</section>
+<!-- we help section ends here -->
+
+<!-- trusted microsoft section starts here -->
+<div class="seamCbnits py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-lg-6 col-xl-6">
+        <div class="seamCbnits-img">
+          <img
+            alt="image"
+            src="https://cbnits-web-live.s3.amazonaws.com/365-1606917940650.png"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-6">
+        <div class="seamCbnits-Text">
+          <h2>
+            <span class="skycolor"> CBNITS, </span
+            ><span>A Trusted Microsoft Dynamic 365 Consultant </span>
+          </h2>
+        </div>
+        <div
+          class="seamCbnits-pText"
+          *ngFor="let dynamic of dynamicConsultentArray"
+        >
+          <div class="row">
+            <div class="col-lg-1 col-xl-1">
+              <img
+                src="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png"
+                alt="https://cbnits.s3.us-east-1.amazonaws.com/list-icon.png"
+              />
+            </div>
+            <div class="col-lg-11 col-xl-11 dynamicpara">
+              <p>{{ dynamic }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- trusted microsoft section ends here -->
+
+<!-- para section starts here -->
+<div class="container" style="margin-bottom: -77px">
+  <div class="text-center dynamic-bottamBanner">
+    <p style="font-size:20.6px">
+      With CBNITS, take the leap from on-premise to the cloud and make sure
+      you're supported every step of the way. Our process is flexible and
+      customer-driven, so you get a Dynamics 365 solution that could prove a
+      game-changer for your business.
+    </p>
+  </div>
+</div>
+<!-- para section ends here -->
+
+<!-- hire us section starts here -->
+<div class="text-center">
+  <button type="button" (click)="hireUs()" class="btn btn-primary">
+    Hire Us
+  </button>
+</div>
+<!-- hire us section ends here -->
+
+<!-- Footer section starts here -->
+<app-footer></app-footer>
+<!-- Footer section ends here -->

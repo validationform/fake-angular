@@ -1,0 +1,21 @@
+<app-header [backgroundImage]="backgroundBoomingIndustryImage" [headerTitle]="headerBoomingIndustryTitle" [headerParaOne]="headerBoomingIndustryParaOne"
+    [headerLanguageArray]="headerBoomingIndustryLanguageArray">
+</app-header>
+
+<!-- booming-industry page data start -->
+<div class="booming-industry">
+    <div class="booming-industry-content">
+        <h1>Booming Industries In 2020, Part Two: Freelancing</h1>
+    </div>
+    <div class="author">
+        <p id="font-bolder">Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical
+            Advisor, CBNITS</p>
+        <p [innerHTML]="boomingIndustryById.newsContent"></p>
+        <p>The original source of the article can be found <a
+                href="https://www.forbes.com/sites/forbestechcouncil/2020/11/05/booming-industries-in-2020-part-two-freelancing/?sh=770c839c7014">
+                HERE.</a></p>
+    </div>
+</div>
+<!-- booming-industry page data end -->
+
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+<div class="why-hire-fullstack py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="full-stack-img">
+          <img alt="" src="{{ bigDataImage }}" />
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="developer-from-cbnits">
+          <h6>
+            {{ bigDataWhiteText }} <span class="organgecolor"> {{ bigDataOrangeText }} </span>
+          </h6>
+          <div *ngFor="let development of bigDataDevelopmentArray">
+            <p>
+              <span>
+                <img
+                  src="{{ tickImage }}"
+                />
+                &nbsp; </span
+              >{{ development }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

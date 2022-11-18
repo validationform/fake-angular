@@ -1,0 +1,48 @@
+.global-radiance {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif !important;
+    color: #212529;
+    cursor: default;
+}
+
+.global-radiance-content {
+    width: 75%;
+    height: 155px;
+    margin: 0 auto;
+}
+
+.global-radiance-content h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.author {
+    width: 76%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.author #font-bolder {
+    font-size: 16px;
+    line-height: 24px;
+    line-break: normal;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #055fc0;
+}
+
+.author p {
+    font-size: 16px;
+    line-break: normal;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,123 @@
+/*dynamic 365 css start*/
+.dyanamicCbnits {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin: 50px 0;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+}
+.imgSec img {
+    width: 100%;
+}
+.dyanamicCbnits-Text {
+    text-align: justify;
+    margin-left: 30px;
+    
+}
+p {
+    margin-top: 0;
+    margin-bottom:16px;
+    font-size: 16px;
+    cursor: default;
+}
+.dyanamicCbnits-Text span {
+    font-size: 48px;
+    font-weight: 600;
+    cursor: default;
+    text-transform: uppercase;
+}
+/*dynamic 365 css end*/
+.seam-head h2 {
+    font-size: 50px;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.skycolor {
+    color: #1dbdfc;
+}
+
+.seam-head p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 60px;
+    color: #4d4d4d;
+    cursor: default;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.seamCbnits-Text span {
+    font-weight: 600;
+    cursor: default;
+    font-size: 3.5rem;
+}
+
+.dynamicpara p {
+    font-weight: 500;
+    font-size: 16px;
+    cursor: default;
+    font-family:'Poppins', sans-serif;
+    width: 80%;
+}
+
+.dynamic-bottamBanner {
+    background: #ff5c33;
+    /* height: 180px; */
+    padding: 40px;
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn-primary {
+    margin-top: 80px;
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+}
+.btn-primary:focus{
+    background-color: #007bff;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    box-shadow:0 0 0 3px #1dbdfc ;
+}
+  
+@media (max-width: 767px) {
+    .dyanamicCbnits-Text span {
+        font-size: 35px;
+    }
+    .dyanamicCbnits-Text {
+        margin: 30px 0 0 0;
+    }
+    .micro-tech-heads h2 {
+        font-size: 35px !important;
+    }
+    .micro-tech-heads h6 {
+        font-size: 18px !important;
+        margin: 10px 0 0 0;
+    }
+    .seam-head h2 {
+        font-size: 35px !important;
+    }
+    .seam-head p {
+       padding: 0
+    }
+    .seamCbnits-Text {
+        margin: 30px 0 0 0;
+    }
+    .seamCbnits-img img{
+        width:100%;
+    }
+ 
+}

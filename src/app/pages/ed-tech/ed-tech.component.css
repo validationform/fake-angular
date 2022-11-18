@@ -1,0 +1,139 @@
+.language {
+    font-family: "Lato", sans-serif;
+}
+.py-5 {
+    padding-top: 3rem!important;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+}
+.imgSec img {
+    width: 100%;
+}
+.webpage {
+    width: 100%;
+}
+.webpage h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.webpage span {
+    font-size: 17px;
+}
+/* Section Two Css */
+.darkbg {
+    background-color: #f8f9fd;
+    padding: 50px 0;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.functionality {
+    width: 100%;
+}
+.functionality h2 {
+    color: #1cd5f2;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+.mr-2, .mx-2 {
+    margin-right: 0.5rem!important;
+}
+/* section Three css*/
+
+.skybg {
+    background-color: #22bbf7;
+    padding: 70px 0 60px 0;
+}
+.morethan {
+    width: 100%;
+}
+.morethan h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.morethan h2 span {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.my-5 {
+    margin-top: 3rem!important;
+}
+.mobile-wrap {
+    padding: 15px;
+    background-color: #19a3d9;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.text-center {
+    text-align: center!important;
+}
+.mobile-wrap img {
+    margin: 20px;
+}
+h6 {
+    font-size: 16px;
+}
+/* Section Four CSS */
+.deliver {
+    width: 100%;
+}
+.deliver h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.techstack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+.techstack .teckStackImg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.techstack .teckStackName {
+    padding-left: 15px;
+}
+.techstack .teckStackName span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}

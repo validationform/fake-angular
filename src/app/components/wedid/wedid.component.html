@@ -1,0 +1,14 @@
+<div class="skybg py-5">
+    <div class="themed-container container" style="padding: 25px;">
+        <div class="morethan text-center">
+            <h2 class="mb-3 mt-2">{{wedidHeading}}<span class="red">{{wedidSpan}}</span></h2>
+        </div>
+        <div class="d-flex mt-5 align-items-center row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let wedid of wedidArray">
+                <div class="threeOptn text-center"><img src="{{wedid.wedidImg}}" alt="">
+                    <h6>{{wedid.wedidSpan}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.skybg {
+    background-color: #22bbf7;
+    padding: 70px 0 60px 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.imgSec img {
+    width: 100%;
+}
+
+.platform {
+    width: 100%;
+}
+
+.platform h2 {
+    color: #fff;
+    font-size: 30px;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.whiteText {
+    color: #fff;
+    cursor: default;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.mr-2,
+.mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+.redsmall {
+    color: #f15a29;
+    cursor: default;
+    padding-left: 8px;
+}

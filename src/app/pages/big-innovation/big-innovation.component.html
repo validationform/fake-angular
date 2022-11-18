@@ -1,0 +1,14 @@
+<app-header [backgroundImage]="backgroundBigInnovationImage" [headerTitle]="headerBigInnovationTitle"
+  [headerParaOne]="headerBigInnovationParaOne" [headerLanguageArray]="headerBigInnovationLanguageArray"></app-header>
+
+<!-- big-innovation page data start -->
+<div class="big-innovation">
+  <div class="big-innovation-content">
+    <div class="details">
+      <h1>{{bigInnovationByIdData.metaTitle}}</h1>
+      <p [innerHTML]="bigInnovationByIdData.content"></p>
+    </div>
+  </div>
+  <!-- big-innovation page data end -->
+
+  <app-footer></app-footer>

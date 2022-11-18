@@ -1,0 +1,32 @@
+.big-innovation {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif !important;
+    color: #212529;
+}
+
+.big-innovation-content {
+    width: 76%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.details {
+    width: 100%;
+    height: auto;
+}
+
+.details h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    cursor: default;
+}
+
+.details p {
+    font-size: 16px;
+    cursor: default;
+    text-align: justify;
+    margin-bottom: 25px;
+}

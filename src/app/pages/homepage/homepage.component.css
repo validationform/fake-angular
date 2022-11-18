@@ -1,0 +1,842 @@
+/* css for what we do section starts*/
+
+.what-we-do-main {
+  background-color: #f8f9fc;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.what-we-do-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.what-we-do-container {
+  box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 11%);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  height: 250px;
+}
+
+.num-txt {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: default;
+  margin-bottom: 25px;
+}
+
+.num-txt h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #222222;
+  cursor: default;
+}
+
+.desp {
+  font-size: 16px;
+  cursor: default;
+}
+
+.num-txt span {
+  line-height: 1;
+  margin-right: 8px;
+  font-size: 50px;
+  cursor: default;
+  font-weight: 400;
+  color: #b8b9bb;
+}
+
+.what-we-do-subtitle h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  cursor: default;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
+
+.what-we-do-subtitle h2 span {
+  color: #1dbdfc;
+}
+
+/* For media screen */
+@media (min-width: 1200px) {
+  .col-xl-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .what-we-do-container {
+    height: 220px;
+    margin-bottom: 30px;
+  }
+}
+
+/* css for what we do section ends*/
+
+
+/* css for experience section starts*/
+.years-exp {
+  background-color: #fff !important;
+}
+
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.expert-d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.expertise-maindiv {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 25px;
+}
+
+.expert-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 300px;
+}
+
+
+.text-center {
+  text-align: center !important;
+}
+
+.circle-container {
+  position: relative;
+  background-color: #1dbdfc;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.circle {
+  position: absolute;
+  top: 12px;
+  left: 52px;
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 5px 5px 12px 6px rgb(194 206 223 / 80%);
+}
+
+.circle p {
+  margin-bottom: 0px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.circle::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 3em;
+  right: -3.5em;
+  background-color: #1dbdfc;
+  border-radius: 50%;
+}
+
+.circle-container::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: -7em;
+  background-color: #1dbdfc;
+  border-radius: 50%;
+}
+
+.exp-name {
+  margin-bottom: 25px;
+}
+
+.exp-name span {
+  font-size: 60px;
+  font-weight: 700;
+  color: #1dbdfc;
+  cursor: default;
+}
+
+.exp-name abbr {
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: default;
+  font-weight: 500;
+  color: #767778;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.big-num {
+  font-size: 60px;
+  font-weight: 700;
+  color: #1dbdfc;
+  font-family: "Poppins", sans-serif;
+}
+
+.circle-p {
+  font-size: 16px;
+  cursor: default;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.circle p {
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.exp-name p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .circle-wrap {
+    margin-bottom: 30px;
+  }
+
+  .big-num {
+    font-size: 47px !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .circle {
+    left: 40px;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .circle-container {
+    height: 150px;
+    width: 150px;
+    margin-left: -90px;
+  }
+}
+
+/* css for experience section ends*/
+
+/* css for expertise section starts*/
+
+.expertiseDiv {
+  background-color: #1dbdfc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.expertiseDiv-head h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 600;
+  cursor: default;
+}
+
+.expertiseDiv-head h2 span {
+  color: #f15a29;
+  cursor: default;
+}
+
+.expertiseDiv-head p {
+  font-size: 18px;
+  color: #fff;
+  cursor: default;
+  font-weight: 500;
+}
+
+.expertiseDiv-para {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  cursor: default;
+  margin: 30px 0px 60px;
+}
+
+.expertiseDiv-box {
+  padding: 15px;
+  background-color: #19a3d9;
+  width: 100%;
+  height: 180px;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.expertiseDiv-box img {
+  margin: 20px;
+}
+
+.expertiseDiv-box h6 {
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+/* css for expertise section ends*/
+
+
+/* css for domain section starts*/
+
+.domain-head {
+  width: 100%;
+  margin: 0 0 80px 0;
+}
+
+.domain-head h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+.domain-head h2 span {
+  color: #1dbdfc;
+  cursor: default;
+}
+
+.topic img {
+  height: 180px;
+  width: 210px;
+}
+
+.leftTopic h2 {
+  font-size: 36px;
+  font-weight: 600;
+  cursor: default;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.desp-topic .btn-primary {
+  background-color: #009444;
+  border-color: #009444;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.desp-topic .btn-primary:focus{
+  background-color: #007bff;
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+  box-shadow:0 0 0 3px #1dbdfc ;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  border-bottom: 1px solid #cdcdcd;
+  cursor: pointer;
+}
+
+
+.health-tab {
+  padding: 20px 50px 10px;
+  position: relative;
+}
+
+.triangle {
+  left: 38%;
+  top: -14%;
+  position: absolute;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 50px;
+  height: 25px;
+}
+
+.health-tab P {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 14px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.desp-p {
+  font-size: 16px;
+  cursor: default;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* css for domain section ends*/
+
+
+/* whycbnits for domain section starts*/
+.themed-container{
+  padding-bottom: 20px;
+}
+.whyCbnits {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fc;
+}
+
+.whyTitle {
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.features {
+  box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 11%);
+  padding: 20px;
+  margin-bottom: 25px;
+  height: 150px;
+}
+
+.feature-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.feature-text p {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.whyCbnits-h2 {
+  font-size: 3rem;
+}
+
+.whyCbnits-p {
+  color: #000;
+  font-size: 14px;
+  cursor: default;
+  margin-bottom: 60px;
+}
+
+/* whycbnits for domain section ends*/
+
+/* aboutcbnits for domain section starts*/
+
+.aboutCbnits {
+  width: 100%;
+  background: linear-gradient(rgba(0, 148, 68, 0.25), rgba(0, 148, 68, 0.99)), url('https://www.cbnits.com/3aa767b1ebeab2c799d35a19ae5b80d6.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+
+.imgSec img {
+  width: 100%;
+}
+
+.about-desp h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 44px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.about-desp h4 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+  cursor: default;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.about-desp p {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 30px;
+  cursor: default;
+  font-size: 16px;
+}
+
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+
+.imgSec img {
+  width: 100%;
+}
+
+/* aboutcbnits for domain section ends*/
+
+
+/* whycustomers for domain section starts*/
+.whycustomers{
+  margin-bottom: -48px;
+}
+.item {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+.margin-sm {
+  margin: 12px;
+}
+#specialnote p{
+  margin-left: 20px;
+}
+.clients {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 46px;
+}
+
+.client-img img {
+  height: auto;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #1dbdfc;
+  margin-right: 15px;
+}
+
+.actual-client h5 {
+  margin-bottom: 0;
+  font-size: 20px;
+  cursor: default;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.car-desp {
+  font-size: 22px;
+  font-weight: 300;
+  cursor: default;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.carousel-indicators {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 21%;
+  margin-bottom: -11px;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  background-color: #cdcdcd;
+}
+
+.carousel-indicators .active {
+  background-color: #1dbdfc;
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  margin-top: 10px;
+}
+
+.title-carousel h3 {
+  color: #000;
+  font-size: 48px;
+  cursor: default;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.title-carousel h4 {
+  color: #1dbdfc;
+  font-size: 48px;
+  cursor: default;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+/* whycustomers for domain section ends*/
+
+/* linkedinfeed for domain section starts*/
+
+.linkedinpost {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fc;
+}
+
+.postTitle {
+  margin-bottom: 30px;
+}
+
+.postTitle h2 {
+  color: #000;
+  font-size: 42px;
+  cursor: default;
+}
+
+.postTitle h2 span {
+  color: #1dbdfc;
+}
+
+.postcontainer {
+  position: relative;
+  width: 30%;
+  height: 0;
+  padding-bottom: 60%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.post {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* linkedinfeed for domain section ends*/
+/*media Query start here for makeing website responsive*/
+@media (max-width: 425px) {
+  .features {
+    height: 230px;
+  }
+  .postcontainer{
+    width: 95%;
+    padding-bottom: 210%; 
+  }
+  .topic img {
+    height: 150px;
+    width: 150px;
+  }
+  .what-we-do-subtitle h2{
+    font-size: 35px !important;
+  }
+  .circle p{
+    font-size: 12px;
+  }
+  .expertiseDiv-head h2{
+    font-size: 35px;
+  }
+  .domain-head h2{
+    font-size: 35px;
+  }
+  .whyCbnits-h2{
+    font-size: 38px;
+}
+.title-carousel h3{
+  font-size: 35px;
+}
+.title-carousel h4{
+  font-size: 34px;
+}
+.car-desp{
+  font-size: 12px;
+}
+.clients{
+  width:100%;
+}
+.actual-client h5{
+  font-size: 16px;
+ }
+ .postTitle h2 {
+  font-size: 38px;
+}
+}
+@media (min-width: 426px) and (max-width: 575px) {
+  .features {
+    height: 210px;
+  }
+  .what-we-do-subtitle h2{
+    font-size: 35px !important;
+  }
+  .postcontainer{
+    width: 90%;
+    padding-bottom: 150%; 
+  }
+  .topic img {
+    height: 150px;
+    width: 150px;
+  }
+  .leftTopic h2 {
+    font-size: 25px;
+  }
+  .clients{
+    width:100%;
+  }
+  .circle p{
+    font-size: 12px;
+  }
+  .car-desp{
+    font-size: 12px;
+  }
+  .postTitle h2 {
+    font-size: 38px;
+  }
+  .title-carousel h3{
+    font-size: 35px;
+  }
+  .title-carousel h4{
+    font-size: 34px;
+  }
+  .domain-head h2{
+    font-size: 35px;
+  }
+  .whyCbnits-h2{
+    font-size: 38px;
+}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .features {
+    height: 190px;
+  }
+  .postcontainer{
+    width: 60%;
+    padding-bottom: 90%; 
+    margin-left:150px;
+  }
+  .leftTopic h2 {
+    font-size: 25px;
+}
+.car-desp{
+  font-size: 12px;
+}
+.postTitle h2 {
+  font-size: 38px;
+}
+.what-we-do-container{
+  margin-bottom: 10px;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .features {
+    height: 180px;
+  }
+  .postcontainer{
+    width: 60%;
+    padding-bottom: 90%; 
+    margin-left:150px;
+  }
+  .car-desp{
+    font-size: 16px;
+  }
+  .what-we-do-container{
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .postcontainer{
+    padding-bottom: 70%; 
+  }
+}
+@media (min-width: 1200) and (max-width: 1440) {
+  .postcontainer{
+    padding-bottom: 150%; 
+  }
+}

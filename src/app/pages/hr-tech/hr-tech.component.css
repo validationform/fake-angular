@@ -1,0 +1,193 @@
+.hrTech {
+    font-family: 'poppins', sans-serif;
+    background-color: #fff;
+}
+
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.imgSec {
+    width: 100%;
+    height: auto;
+}
+
+.imgSec img {
+    width: 100%;
+}
+
+.hrTech-Text {
+    text-align: justify;
+    margin-left: 30px;
+    cursor: default;
+}
+
+.hrTech-Text p {
+    cursor: default;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hrTech-Text span {
+    font-size: 40px;
+    cursor: default;
+    font-weight: 600;
+}
+
+.hrTechCbnits {
+    background-color: #1dbdfc;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hrTechCbnits h2 {
+    cursor: default;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+}
+
+.hrTechCbnits-advantages {
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.hrTechCbnits-advantages p {
+    cursor: default;
+    font-size: 18px;
+    color: #fff;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.v2-tree {
+    background-color: #f8f9fc;
+}
+
+.v2-tree h2 {
+    font-size: 48px;
+    font-weight: 700;
+    cursor: default;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skycolor {
+    color: #1dbdfc;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 19px;
+    cursor: default;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 24px;
+    cursor: default;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+}
+
+.rignt::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 58px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 13px solid #eff0f3;
+}
+
+.hrdid-reason-pick::after {
+    content: "";
+    top: 0px;
+    left: 94px;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #eff0f3;
+    z-index: 1;
+}
+
+.reason-pick {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eff0f3;
+    z-index: 9;
+}
+
+.hrdid-reason-pick {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eff0f3;
+    z-index: 9;
+}
+
+@media (max-width: 767px) {
+    .hrTech-Text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .hrTech-Text span {
+        font-size: 30px;
+    }
+    .hrTech-Text p {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .hrTechCbnits h2 {
+        font-size: 35px;
+        color: #fff;
+    }
+    .hrTechCbnits-advantages {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .TechnolyUesd-head h2 {
+        font-size: 35px !important;
+    }
+   .v2-tree h2 {
+     font-size: 32px !important;
+    }
+}

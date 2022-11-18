@@ -1,0 +1,74 @@
+<app-header
+  [backgroundImage]="uiuxBackgroundImage"
+  [headerTitle]="uiuxHeaderTitle"
+  [headerSpan]="uiuxHeaderSpan"
+  [headerParaOne]="uiuxHeaderParaOne"
+  [headerParaTwo]="uiuxHeaderParaTwo"
+  [headerLanguageArray]="uiuxHeaderLanguageArray"
+>
+</app-header>
+
+<!--web page and mobile Section Start-->
+<app-webpage
+  [webPageImg]="webPageImage"
+  [webFirstText]="webFirstText"
+  [webSecondText]="webSecondText"
+  [webPagePara]="webPagePara"
+>
+</app-webpage>
+<!--web page and mobile Section End-->
+
+<!--why cbnits more than Section Start-->
+<div class="skybg py-5">
+  <div class="themed-container container">
+    <div class="morethan text-center">
+      <h2 class="mb-3">why is cbnits <span class="red">more than</span></h2>
+      <h6>just another UX UI agency?</h6>
+    </div>
+    <div class="d-flex align-items-center row">
+      <div
+        class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 box1" *ngFor="let more of moreThanArray;let i=index"
+      
+      >
+        <div class="morethanlist mt-5">
+          <div class="morethantop">
+            <div class="head"><span>{{i+1}}</span></div>
+            <div class="head2">
+              <span>{{ more.title }}</span>
+            </div>
+          </div>
+          <div class="morethanbtm">
+            <p>
+             {{ more.desc }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- why cbnits more than Section end-->
+
+<!--deliverables what we can design for you Section Start -->
+<app-uiuxdeliverables
+  [uiUxArray]="uiUxArray"
+  [uiUxDeliverablesHeadingBlack]="uiUxDeliverablesHeadingBlack"
+  [uiUxDeliverablesHeadingBlue]="uiUxDeliverablesHeadingBlue"
+>
+</app-uiuxdeliverables>
+<!--deliverables what we can design for you Section End -->
+
+<!-- Technical skills section start -->
+<app-technicalskills
+  [firstTitle]="firstTitle"
+  [firstTitleBlueText]="firstTitleBlueText"
+  [technologyStackArray]="technologyStackArray"
+  [content]="content"
+  [pageName]="pageName"
+>
+</app-technicalskills>
+<!-- Technical skills section Finish-->
+
+<!-- Footer section start-->
+<app-footer></app-footer>
+<!-- Footer section end-->

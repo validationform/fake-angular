@@ -1,0 +1,44 @@
+<div class="darkbg py-5">
+    <div class="themed-container container">
+        <div class="deliver text-center">
+            <h2 class="skycolor mb-2">functionality</h2>
+            <p class="my-2"><b>{{firstHeading}}</b></p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center  row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let functionality of firstArray">
+                <div class="deliverOptn mt-4">
+                    <div class="deliverOptnNo">
+                        <div class="dashBorder"><span>{{functionality.firstSpan}}</span></div>
+                    </div>
+                    <div class="deliverDetails"><span>{{functionality.firstSpan1}}</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="para text-center">
+            <p><b>{{secondHeading}}</b></p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center  row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let functionality of secondArray">
+                <div class="deliverOptn mt-4">
+                    <div class="deliverOptnNo">
+                        <div class="dashBorder"><span>{{functionality.secondSpan}}</span></div>
+                    </div>
+                    <div class="deliverDetails"><span>{{functionality.secondSpan1}}</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="para text-center">
+            <p><b>{{thirdHeading}}</b></p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center  row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let functionality of thirdArray">
+                <div class="deliverOptn mt-4">
+                    <div class="deliverOptnNo">
+                        <div class="dashBorder"><span>{{functionality.thirdSpan}}</span></div>
+                    </div>
+                    <div class="deliverDetails"><span>{{functionality.thirdSpan1}}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

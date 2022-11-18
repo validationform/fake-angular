@@ -1,0 +1,31 @@
+<!-- expertise section starts here -->
+
+<div class="themed-container">
+    <div class="micro py-5">
+      <div class="themed-container container">
+        <div class="text-center micro-tech-heads">
+          <h2>{{microsoftHeading}}<span>{{microsoftSpan}}</span></h2>
+          <h6>{{microsoftPara}}</h6>
+        </div>
+        <div class="expertise-maindiv">
+        <div class="expert-d-flex align-items-center justify-content-between expert-row" *ngFor = "let microsoft of microsoftArray">
+          <div
+            class="expert-d-flex align-items-center justify-content-center col-lg-4 col-xl-4"
+          >
+            <div class="micro-tect-wraps">
+              <div class="text-center">
+                <img
+                  src="{{ microsoft.image }}"
+                />
+                <h5>{{ microsoft.name }}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+</div>
+
+<!-- expertise section ends here -->
+

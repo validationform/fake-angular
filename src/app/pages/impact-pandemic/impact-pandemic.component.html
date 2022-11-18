@@ -1,0 +1,21 @@
+<app-header [backgroundImage]="backgroundImpactPandemicImage" [headerTitle]="headerImpactPandemicTitle"
+    [headerParaOne]="headerImpactPandemicParaOne" [headerLanguageArray]="headerImpactPandemicLanguageArray">
+</app-header>
+
+<!-- impact-pandemic page data start -->
+<div class="pandemic">
+    <div class="pandemic-content">
+        <h1>{{impactPandemicById.metaTitle}}</h1>
+    </div>
+    <div class="author">
+        <p id="font-bolder">Author: Naveen Bachkethi, Forbes Councils Member, Forbes Technology Council Technical
+            Advisor, CBNITS</p>
+        <p [innerHTML]="impactPandemicById.newsContent"></p>
+        <p>The original source of the article can be found <a
+                href="https://www.forbes.com/sites/forbestechcouncil/2021/01/29/how-the-impact-of-the-pandemic-has-created-a-need-for-technology-service-providers/?sh=460b11c02ecb">
+                HERE.</a></p>
+    </div>
+</div>
+<!-- impact-pandemic page data end -->
+
+<app-footer></app-footer>

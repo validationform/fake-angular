@@ -1,0 +1,31 @@
+.cbnits-growing {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif !important;
+    color: #212529;
+}
+
+.cbnits-growing-content {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.details {
+    width: 100%;
+    height: auto;
+    cursor: default;
+}
+
+.details h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.details p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 25px;
+}

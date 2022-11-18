@@ -1,0 +1,16 @@
+<app-header [backgroundImage]="backgroundCbnitsBronzeImage" [headerTitle]="headerCbnitsBronzeTitle" [headerParaOne]="headerCbnitsBronzeParaOne"
+    [headerLanguageArray]="headerCbnitsBronzeLanguageArray">
+</app-header>
+
+<!-- cbnits-bronze page data start -->
+<div class="cbnits-bronze">
+    <div class="cbnits-bronze-content">
+        <div class="details">
+            <h1>{{cbnitsBronzeById.metaTitle}}</h1>
+            <p [innerHTML]="cbnitsBronzeById.content"></p>
+        </div>
+    </div>
+</div>
+<!-- cbnits-bronze page data end -->
+
+<app-footer></app-footer>

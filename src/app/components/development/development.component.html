@@ -1,0 +1,28 @@
+<div class="Alanguage py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="Adevelpment">
+          <h2>{{ developmentHeading }}</h2>
+          <h2 class="skycolor mb-5">{{ developmentSkyHeading }}</h2>
+          <h4>{{ developmentText }}</h4>
+          <div *ngFor="let development of developmentArray">
+            <p>
+              <span>
+                <img src="{{ developmentListIcon }}" /> </span
+              >{{ development }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="imgSec"><br /><br /><br /><br /><br />
+          <img alt="" src="{{ developmentImage }}" />
+        </div>
+      </div>
+    </div>
+    <div class="text-center Ahire-req" *ngIf="developmentPara">
+      <p>{{ developmentPara }}</p>
+    </div>
+  </div>
+</div>

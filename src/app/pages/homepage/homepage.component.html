@@ -1,0 +1,427 @@
+<!-- Header section starts here -->
+
+<app-header
+  [backgroundImage]="backgroundHomePageImage"
+  [headerTitle]="headerHomePageTitle"
+  [headerSpan]="headerHomePageSpan"
+  [headerParaOne]="headerHomePageParaOne"
+  [headerParaTwo]="headerHomePageParaTwo"
+  [headerFile]="headerHomePageFile"
+  [headerLanguageArray]="headerHomePageLanguageArray"
+>
+</app-header>
+
+<!-- Header section ends here -->
+
+<!-- what we do section starts here -->
+
+<section class="what-we-do" style="margin-bottom: 20px">
+  <div class="what-we-do-main">
+    <div class="themed-container py-5 container">
+      <div class="what-we-do-subtitle">
+        <h2>
+          what
+          <span>we do</span>
+        </h2>
+      </div>
+      <form style="padding-bottom: 30px">
+        <div class="d-flex justify-content-between row">
+          <div
+            class="col-lg-4 col-xl-4"
+            *ngFor="let wedo of whatWeDoArray; let i = index"
+          >
+            <div class="what-we-do-container">
+              <div class="num-txt">
+                <span>{{ i + 1 }}</span>
+                <h4>{{ wedo.name }}</h4>
+              </div>
+              <p class="desp">{{ wedo.description }}</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- what we do section ends here -->
+
+<!-- experience section starts here -->
+
+<section class="experience">
+  <div class="experience years-exp py-5">
+    <div class="themed-container container">
+      <div class="d-flex align-items-center row">
+        <div
+          class="circle-wrap d-flex align-items-center justify-content-center col-lg-6 col-xl-6"
+        >
+          <div class="circle-container">
+            <div class="circle text-center">
+              <p class="big-num">07</p>
+              <p class="circle-p">years</p>
+              <p class="circle-p">of experience</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-6">
+          <div>
+            <div class="exp-name">
+              <span>400+</span>
+              <abbr>engineers</abbr>
+              <p class="circle-p">Leaders and the hard-working personalities</p>
+            </div>
+            <div class="exp-name">
+              <span>20</span>
+              <abbr>countries</abbr>
+              <p class="circle-p">
+                Countries where we have satisfied customers
+              </p>
+            </div>
+            <div class="exp-name">
+              <span>1000+</span>
+              <abbr>Projects</abbr>
+              <p class="circle-p">
+                Enterprise-class solutions &amp; projects delivered
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- experience section ends here -->
+
+<!-- expertise section starts here -->
+
+<section class="expertise">
+  <div class="expertiseDiv py-5">
+    <div class="themed-container container">
+      <div class="text-center expertiseDiv-head">
+        <h2>
+          our
+          <span>expertise</span>
+        </h2>
+        <p>in the Cutting-Edge Technologies</p>
+      </div>
+      <p class="expertiseDiv-para text-center">
+        At CBNITS, we provide out of the box ideas to help you unleash the
+        business potential of new-age technologies for differentiated advantage.
+        We are able to catalyze dedicated and skilled resources to our clients.
+      </p>
+      <div class="d-flex align-items-center justify-content-center row">
+        <div
+          class="d-flex align-items-center col-lg-3 col-xl-3"
+          *ngFor="let expertise of expertiseArray"
+        >
+          <div class="expertiseDiv-box">
+            <div class="text-center">
+              <img src="{{ expertise.image }}" />
+              <h6>{{ expertise.name }}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- expertise section ends here -->
+
+<!-- domain section starts here -->
+
+<div class="domain py-5">
+  <div class="themed-container container">
+    <div class="text-center domain-head">
+      <h2>our specialised<span> domains</span></h2>
+    </div>
+    <div
+      class="d-flex align-items-center justify-content-between row"
+      *ngIf="domainObject"
+    >
+      <div class="d-flex align-items-center leftTopic col-lg-6 col-xl-6">
+        <div class="topic">
+          <img alt="health" src="{{ domainObject.thumbnailPic }}" />
+        </div>
+        <h2>{{ domainObject.name }}</h2>
+      </div>
+      <div class="desp-topic col-lg-6 col-xl-6">
+        <p class="desp-p">{{ domainObject.description }}</p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="onButtonClick(domainObject._id)"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+    <div class="category-container">
+      <div
+        [ngStyle]="{
+          'background-color': domain._id === rowActive ? domain.color : 'white'
+        }"
+        class="text-center position-relative health-tab"
+        *ngFor="let domain of domainArray"
+        (click)="onClick(domain._id)"
+      >
+        <img
+          [ngStyle]="
+            domain._id === rowActive
+              ? { filter: 'brightness(100) invert(0)'}
+              : { filter: '' }
+          "
+          src="{{ domain.logoPic }}"
+          alt=""
+        />
+        <p
+          [ngStyle]="
+            domain._id === rowActive ? { color: 'white' } : { color: '#212529' }
+          "
+        >
+          {{ domain.name }}
+        </p>
+        <div
+          class="triangle"
+          [ngStyle]="{
+            'background-color':
+              domain._id === rowActive ? domain.color : 'white'
+          }"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- domain section ends here -->
+
+<!-- whycbnits section starts here -->
+<div class="whyCbnits py-5">
+  <div class="themed-container container">
+    <div class="text-center whyTitle">
+      <h2 class="whyCbnits-h2">Why<span> cbnits ?</span></h2>
+      <p class="whyCbnits-p">We don't deliberate. We deliver.</p>
+    </div>
+    <div class="d-flex align-items-center justify-content-between row">
+      <div class="col-lg-6 col-xl-6" *ngFor="let whycbnits of whyCbnitsArray">
+        <div class="features">
+          <div class="d-flex align-items-center justify-content-center row">
+            <div class="col-lg-2 col-xl-2">
+              <img src="{{ whycbnits.image }}" alt="map" />
+            </div>
+            <div class="feature-text col-lg-10 col-xl-10">
+              <h4>{{ whycbnits.name }}</h4>
+              <p>
+                {{ whycbnits.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- whycbnits section ends here -->
+
+<!-- aboutcbnits section starts here -->
+
+<div class="aboutCbnits py-5">
+  <div class="themed-container container">
+    <div class="d-flex align-items-center row">
+      <div class="col-lg-6 col-xl-6">
+        <div class="imgSec">
+          <img
+            src="https://cbnits.s3.us-east-1.amazonaws.com/cbnitsGroup.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="about-desp col-lg-6 col-xl-6">
+        <h3>about cbnits</h3>
+        <h4>we are family</h4>
+        <p>
+          CBNITS is a premier Enterprise Solution &amp; IT service provider.
+          With our effective digital solutions and immense expertise in
+          cutting-edge technologies, we are helping companies around the world
+          to transform their businesses.
+        </p>
+        <p>
+          With our 400+ expert-level software engineers, cloud engineers,
+          cybersecurity experts, Data Scientists, and UX/UI designers, we have
+          built an impressive portfolio worldwide. We strive for excellence at
+          every stage of our clients' project development.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- aboutcbnits section ends here -->
+
+<!-- whycustomers section starts here -->
+
+<section class="whycustomers">
+  <div class="custom-carousel py-5">
+    <div class="themed-container container">
+      <div class="title-carousel text-center">
+        <h3>Why customers love</h3>
+        <h4>working with us</h4>
+      </div>
+      <div class="container" style="max-width: 1140px">
+        <div id="sampleCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#sampleCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#sampleCarousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="{{ this.thumbnailPic }}" alt=" " />
+                </div>
+                <div id="specialnote">
+                  <img
+                    src="https://cbnits.s3.us-east-1.amazonaws.com/in1.png"
+                    alt=""
+                  />
+                  <p class="px-5 car-desp">{{ this.description }}</p>
+                  <img
+                    src="https://cbnits.s3.us-east-1.amazonaws.com/in2.png"
+                    alt=""
+                    style="float: right"
+                  />
+                </div>
+                <div class="clients">
+                  <div class="client-img"><img src="{{ this.logoPic }}" /></div>
+                  <div class="actual-client">
+                    <h5 class="car-desp-name">{{ this.name[0]}} <br>{{this.name[1]}}</h5>
+                    <!-- <h5 class="car-desp-name">Founding Partner / CTO at Knovva Academy</h5> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="{{ this.thumbnailPic1 }}" alt=" " />
+                </div>
+                <div id="specialnote">
+                  <img
+                    src="https://cbnits.s3.us-east-1.amazonaws.com/in1.png"
+                    alt=""
+                  />
+                  <p class="px-5 car-desp">{{ this.description1 }}</p>
+                  <img
+                    src="https://cbnits.s3.us-east-1.amazonaws.com/in2.png"
+                    alt=""
+                    style="float: right"
+                  />
+                </div>
+                <div class="clients">
+                  <div class="client-img">
+                    <img src="{{ this.logoPic1 }}" />
+                  </div>
+                  <div class="actual-client">
+                    <h5 class="car-desp-name">{{ this.name1[0]}} <br>{{this.name1[1]}}</h5>
+                    <!-- <h5 class="car-desp-name"> Founder &amp; CEO of Numly Inc</h5> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="carousel-control left"
+            href="#sampleCarousel"
+            data-slide="prev"
+            style="background: none"
+          >
+            <!-- <div class="icon-prev"></div> -->
+          </a>
+          <a
+            class="carousel-control right"
+            href="#sampleCarousel"
+            data-slide="next"
+            style="background: none"
+          >
+            <!-- <div class="icon-next"></div> -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- whycustomers section ends here -->
+
+<!-- linkedinfeed section starts here -->
+
+<section class="linkedinfeed">
+  <div class="linkedinpost py-5">
+    <div class="themed-container container">
+      <div class="text-center postTitle">
+        <h2>Check Our Latest<span> LinkedIn Feed</span></h2>
+      </div>
+      <div class="wrapper">
+        <div class="postcontainer">
+          <iframe
+            class="post"
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:6905055123442143232"
+            height="680"
+            width="360"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen=""
+            title="CBNITS Embedded post"
+          ></iframe>
+        </div>
+        <div class="postcontainer">
+          <iframe
+            class="post"
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:6886874810379587584"
+            height="680"
+            width="360"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen=""
+            title="CBNITS Embedded post"
+          ></iframe>
+        </div>
+        <div class="postcontainer">
+          <iframe
+            class="post"
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:6871888345514041344"
+            height="680"
+            width="360"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen=""
+            title="CBNITS Embedded post"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- linkedinfeed section ends here -->
+
+<!-- Footer section starts here -->
+
+<app-footer></app-footer>
+
+<!-- Footer section ends here -->
